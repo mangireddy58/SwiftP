@@ -46,6 +46,7 @@
 		4A8A7E921EE92BBE00B5CC10 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A7E901EE92BBE00B5CC10 /* CustomCell.swift */; };
 		4A8A7E931EE92BBE00B5CC10 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8A7E911EE92BBE00B5CC10 /* CustomCell.xib */; };
 		4A95D0461F0B709D00127F38 /* AlamoFireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A95D0451F0B709D00127F38 /* AlamoFireViewController.swift */; };
+		4AA2C24D1F0E72F60014AF3E /* Locallization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AA2C24F1F0E72F60014AF3E /* Locallization.strings */; };
 		4AD941401F04C908003F9ADC /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9413F1F04C908003F9ADC /* EmailViewController.swift */; };
 		4AD941431F04C945003F9ADC /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD941411F04C945003F9ADC /* Messages.framework */; };
 		4AD941441F04C945003F9ADC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD941421F04C945003F9ADC /* MessageUI.framework */; };
@@ -91,6 +92,8 @@
 		4A4811A61EE95BC800AAE9A7 /* JsonParsingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParsingViewController.swift; sourceTree = "<group>"; };
 		4A5299FC1EFA34F900C09EF2 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		4A5299FF1EFA355900C09EF2 /* ViewControllerAsPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAsPopUp.swift; sourceTree = "<group>"; };
+		4A5778D01F0E47A800330095 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		4A5778D11F0E47B700330095 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		4A61909B1F0271FC00479861 /* SwiftP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftP-Bridging-Header.h"; sourceTree = "<group>"; };
 		4A61909C1F02720000479861 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		4A61909D1F02720000479861 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -105,6 +108,9 @@
 		4A8A7E901EE92BBE00B5CC10 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		4A8A7E911EE92BBE00B5CC10 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		4A95D0451F0B709D00127F38 /* AlamoFireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamoFireViewController.swift; sourceTree = "<group>"; };
+		4AA2C2521F0E730E0014AF3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Locallization.strings; sourceTree = "<group>"; };
+		4AA2C2531F0E73470014AF3E /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Locallization.strings; sourceTree = "<group>"; };
+		4AA2C2541F0E734D0014AF3E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Locallization.strings; sourceTree = "<group>"; };
 		4AD9413F1F04C908003F9ADC /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		4AD941411F04C945003F9ADC /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		4AD941421F04C945003F9ADC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -272,6 +278,14 @@
 			name = ViewControllerAsPopUp;
 			sourceTree = "<group>";
 		};
+		4A57783E1F0E351500330095 /* Localisation */ = {
+			isa = PBXGroup;
+			children = (
+				4AA2C24F1F0E72F60014AF3E /* Locallization.strings */,
+			);
+			name = Localisation;
+			sourceTree = "<group>";
+		};
 		4A6190A71F02908900479861 /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +377,7 @@
 		4AFA4AB61EE7CAAD00B0E972 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4A57783E1F0E351500330095 /* Localisation */,
 				4A95D0441F0B6C0800127F38 /* Alamofire */,
 				4AD9413E1F04C75A003F9ADC /* Email ViewController */,
 				4A9D203B1F02626700CD1908 /* SideMenu */,
@@ -504,6 +519,8 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				tr,
 			);
 			mainGroup = 4AFA4A981EE7CA6500B0E972;
 			productRefGroup = 4AFA4AA21EE7CA6600B0E972 /* Products */;
@@ -533,6 +550,7 @@
 				4AFA4AAA1EE7CA6600B0E972 /* Main.storyboard in Resources */,
 				4A4811A41EE94C6500AAE9A7 /* 3.jpg in Resources */,
 				4A43224C1EF7E45600B0D767 /* 1.png in Resources */,
+				4AA2C24D1F0E72F60014AF3E /* Locallization.strings in Resources */,
 				4A0520AB1EFCD7BA004EEC95 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,10 +649,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4AA2C24F1F0E72F60014AF3E /* Locallization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AA2C2521F0E730E0014AF3E /* en */,
+				4AA2C2531F0E73470014AF3E /* tr */,
+				4AA2C2541F0E734D0014AF3E /* es */,
+			);
+			name = Locallization.strings;
+			sourceTree = "<group>";
+		};
 		4AFA4AA81EE7CA6600B0E972 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4AFA4AA91EE7CA6600B0E972 /* Base */,
+				4A5778D01F0E47A800330095 /* es */,
+				4A5778D11F0E47B700330095 /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -654,6 +684,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -703,6 +734,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

@@ -19,7 +19,7 @@ class AlamoFireViewController: UIViewController {
         //        request.httpMethod = "POST"
         //        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        let params:[String:Any] = ["CopropietarioID":71497]
+        let params:Parameters = ["CopropietarioID":71497]
 //        let params = "{\"CopropietarioID\":71497}"
         Alamofire.request(BASE_URL, method: .post, parameters: params, encoding: JSONEncoding.default).responseJSON { response in
 //            print("Request: \(String(describing: response.request))")   // original url request

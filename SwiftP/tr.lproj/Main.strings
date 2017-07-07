@@ -1,0 +1,84 @@
+
+/* Class = "UIButton"; normalTitle = "Menu"; ObjectID = "0E3-XS-Gvi"; */
+"0E3-XS-Gvi.normalTitle" = "Menu";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "593-DJ-1v2"; */
+"593-DJ-1v2.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "G+"; ObjectID = "6gZ-1Q-yel"; */
+"6gZ-1Q-yel.normalTitle" = "G+";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FOP-BV-qTY"; */
+"FOP-BV-qTY.text" = "Label";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "GAJ-Co-jN4"; */
+"GAJ-Co-jN4.text" = "Title";
+
+/* Class = "UITextField"; placeholder = "Lastname"; ObjectID = "JqK-vY-VRC"; */
+"JqK-vY-VRC.placeholder" = "Lastname";
+
+/* Class = "UITextField"; placeholder = "Firstname"; ObjectID = "LmG-Us-5sN"; */
+"LmG-Us-5sN.placeholder" = "Firstname";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Mch-EZ-GQv"; */
+"Mch-EZ-GQv.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "NMy-qB-wak"; */
+"NMy-qB-wak.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Phone Number"; ObjectID = "PDE-se-SyL"; */
+"PDE-se-SyL.normalTitle" = "Phone Number";
+
+/* Class = "UILabel"; text = "Male"; ObjectID = "Rkc-1K-wgr"; */
+"Rkc-1K-wgr.text" = "Male";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "T0i-mT-twA"; */
+"T0i-mT-twA.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TUb-Z1-8Vb"; */
+"TUb-Z1-8Vb.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Emailid"; ObjectID = "XTq-hS-WJS"; */
+"XTq-hS-WJS.placeholder" = "Emailid";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "aR9-FO-tVX"; */
+"aR9-FO-tVX.normalTitle" = "Register";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "ebo-La-ghh"; */
+"ebo-La-ghh.text" = "Detail";
+
+/* Class = "UIButton"; normalTitle = "Share"; ObjectID = "fQ1-ng-fOL"; */
+"fQ1-ng-fOL.normalTitle" = "Share";
+
+/* Class = "UIButton"; normalTitle = "Email"; ObjectID = "hRb-Ss-cKt"; */
+"hRb-Ss-cKt.normalTitle" = "Email";
+
+/* Class = "UILabel"; text = "Female"; ObjectID = "jDG-of-iTX"; */
+"jDG-of-iTX.text" = "Female";
+
+/* Class = "UILabel"; text = "Swift"; ObjectID = "m3r-2F-IB8"; */
+"m3r-2F-IB8.text" = "Swift";
+
+/* Class = "UITextField"; placeholder = "Date of birth"; ObjectID = "mCG-mM-Qsc"; */
+"mCG-mM-Qsc.placeholder" = "Date of birth";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "mo2-uJ-hK5"; */
+"mo2-uJ-hK5.normalTitle" = "Submit";
+
+/* Class = "UIButton"; normalTitle = "FB"; ObjectID = "nnC-Ou-7Z9"; */
+"nnC-Ou-7Z9.normalTitle" = "FB";
+
+/* Class = "UIButton"; normalTitle = "WhstaUp"; ObjectID = "qPx-qf-oMQ"; */
+"qPx-qf-oMQ.normalTitle" = "WhstaUp";
+
+/* Class = "UIButton"; normalTitle = "NextVC"; ObjectID = "wUE-pW-4jD"; */
+"wUE-pW-4jD.normalTitle" = "NextVC";
+
+/* Class = "UITextField"; placeholder = "Conform password"; ObjectID = "wtn-Uu-Z3z"; */
+"wtn-Uu-Z3z.placeholder" = "Conform password";
+
+/* Class = "UIButton"; normalTitle = "back"; ObjectID = "x6q-KJ-bRG"; */
+"x6q-KJ-bRG.normalTitle" = "back";
+
+/* Class = "UIButton"; normalTitle = "PopUp"; ObjectID = "yeA-rA-fc1"; */
+"yeA-rA-fc1.normalTitle" = "PopUp";
