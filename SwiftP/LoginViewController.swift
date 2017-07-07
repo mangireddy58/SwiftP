@@ -17,7 +17,7 @@ var parentNavigationController : UINavigationController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("View")
     }
     
     @IBAction func submitAction(_ sender: Any) {
@@ -57,7 +57,7 @@ var parentNavigationController : UINavigationController?
                         print(fetchedDataArray)
                     }
                     catch {
-                        print("Error 2")
+             
                     }
                 }
             }

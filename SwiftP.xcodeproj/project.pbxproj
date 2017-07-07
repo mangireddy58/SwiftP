@@ -43,8 +43,6 @@
 		4A79619E1F0A584000D4B3BE /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A79619C1F0A584000D4B3BE /* UserNotifications.framework */; };
 		4A79619F1F0A584000D4B3BE /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A79619D1F0A584000D4B3BE /* UserNotificationsUI.framework */; };
 		4A7961A11F0A61A100D4B3BE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7961A01F0A61A100D4B3BE /* AudioToolbox.framework */; };
-		4A8A7E921EE92BBE00B5CC10 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A7E901EE92BBE00B5CC10 /* CustomCell.swift */; };
-		4A8A7E931EE92BBE00B5CC10 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8A7E911EE92BBE00B5CC10 /* CustomCell.xib */; };
 		4A95D0461F0B709D00127F38 /* AlamoFireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A95D0451F0B709D00127F38 /* AlamoFireViewController.swift */; };
 		4AA2C24D1F0E72F60014AF3E /* Locallization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AA2C24F1F0E72F60014AF3E /* Locallization.strings */; };
 		4AD941401F04C908003F9ADC /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9413F1F04C908003F9ADC /* EmailViewController.swift */; };
@@ -105,8 +103,6 @@
 		4A79619C1F0A584000D4B3BE /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		4A79619D1F0A584000D4B3BE /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		4A7961A01F0A61A100D4B3BE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		4A8A7E901EE92BBE00B5CC10 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		4A8A7E911EE92BBE00B5CC10 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		4A95D0451F0B709D00127F38 /* AlamoFireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamoFireViewController.swift; sourceTree = "<group>"; };
 		4AA2C2521F0E730E0014AF3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Locallization.strings; sourceTree = "<group>"; };
 		4AA2C2531F0E73470014AF3E /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Locallization.strings; sourceTree = "<group>"; };
@@ -427,8 +423,6 @@
 			isa = PBXGroup;
 			children = (
 				4AFA4ABF1EE7DC3B00B0E972 /* LoginViewController.swift */,
-				4A8A7E901EE92BBE00B5CC10 /* CustomCell.swift */,
-				4A8A7E911EE92BBE00B5CC10 /* CustomCell.xib */,
 			);
 			name = LoginViewController;
 			sourceTree = "<group>";
@@ -544,7 +538,6 @@
 				4A33FDE71EF1331F00F89138 /* CollectionDemoCell.xib in Resources */,
 				4A4811A31EE94C6500AAE9A7 /* 2.jpg in Resources */,
 				4A6190A61F0288B400479861 /* MenuItemCell.xib in Resources */,
-				4A8A7E931EE92BBE00B5CC10 /* CustomCell.xib in Resources */,
 				4A4811A21EE94C6500AAE9A7 /* 1.jpg in Resources */,
 				4A43224D1EF7E45600B0D767 /* 2.png in Resources */,
 				4AFA4AAA1EE7CA6600B0E972 /* Main.storyboard in Resources */,
@@ -636,7 +629,6 @@
 				4A33FDE61EF1331F00F89138 /* CollectionDemoCell.swift in Sources */,
 				4A4811A71EE95BC800AAE9A7 /* JsonParsingViewController.swift in Sources */,
 				4A6190A21F02853E00479861 /* MenuItemsViewController.swift in Sources */,
-				4A8A7E921EE92BBE00B5CC10 /* CustomCell.swift in Sources */,
 				4A33FDEA1EF1614F00F89138 /* PhotoViewController.swift in Sources */,
 				4AD941401F04C908003F9ADC /* EmailViewController.swift in Sources */,
 				4A2966511EFBB5AC00EF66FB /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */,
