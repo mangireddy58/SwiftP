@@ -61,7 +61,7 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     }
     // Login ViewController
     func fnForLoginViewController() {
-        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "BlurViewController") as! BlurViewController
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "CustomHeaderViewController") as! CustomHeaderViewController
         self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     //MARK:- Valid EmailId
@@ -129,7 +129,7 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         self.view.addSubview(mViewLoading)
         self.view.addSubview(mImageViewLoading!)
         
-//        let imagesArray = ["tmp-0.gif", "tmp-1.gif", "tmp-3.gif", "tmp-4.gif", "tmp-5.gif", "tmp-6.gif", "tmp-7.gif", "tmp-8.gif", "tmp-9.gif", "tmp-10.gif", "tmp-11.gif", "tmp-12.gif", "tmp-13.gif", "tmp-14.gif", "tmp-15.gif", "tmp-16.gif", "tmp-17.gif", "tmp-18.gif", "tmp-19.gif", "tmp-20.gif", "tmp-21.gif", "tmp-22.gif", "tmp-23.gif", "tmp-24.gif", "tmp-25.gif", "tmp-26.gif", "tmp-27.gif", "tmp-28.gif", "tmp-29.gif"]
+
         
         mImageViewLoading?.animationImages = [UIImage(named:"tmp-0.gif")!,
                                              UIImage(named:"tmp-1.gif")!,
