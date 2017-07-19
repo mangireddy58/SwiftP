@@ -58,7 +58,6 @@
 		4A79619F1F0A584000D4B3BE /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A79619D1F0A584000D4B3BE /* UserNotificationsUI.framework */; };
 		4A7961A11F0A61A100D4B3BE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7961A01F0A61A100D4B3BE /* AudioToolbox.framework */; };
 		4A95D0461F0B709D00127F38 /* AlamoFireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A95D0451F0B709D00127F38 /* AlamoFireViewController.swift */; };
-		4AA2C24D1F0E72F60014AF3E /* Locallization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AA2C24F1F0E72F60014AF3E /* Locallization.strings */; };
 		4AD941401F04C908003F9ADC /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9413F1F04C908003F9ADC /* EmailViewController.swift */; };
 		4AD941431F04C945003F9ADC /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD941411F04C945003F9ADC /* Messages.framework */; };
 		4AD941441F04C945003F9ADC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD941421F04C945003F9ADC /* MessageUI.framework */; };
@@ -132,9 +131,6 @@
 		4A79619D1F0A584000D4B3BE /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		4A7961A01F0A61A100D4B3BE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4A95D0451F0B709D00127F38 /* AlamoFireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamoFireViewController.swift; sourceTree = "<group>"; };
-		4AA2C2521F0E730E0014AF3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Locallization.strings; sourceTree = "<group>"; };
-		4AA2C2531F0E73470014AF3E /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Locallization.strings; sourceTree = "<group>"; };
-		4AA2C2541F0E734D0014AF3E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Locallization.strings; sourceTree = "<group>"; };
 		4AD9413F1F04C908003F9ADC /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		4AD941411F04C945003F9ADC /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		4AD941421F04C945003F9ADC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -302,14 +298,6 @@
 			name = ViewControllerAsPopUp;
 			sourceTree = "<group>";
 		};
-		4A57783E1F0E351500330095 /* Localisation */ = {
-			isa = PBXGroup;
-			children = (
-				4AA2C24F1F0E72F60014AF3E /* Locallization.strings */,
-			);
-			name = Localisation;
-			sourceTree = "<group>";
-		};
 		4A5B76B81F1F6AAA0044FBE7 /* MultipleCustomCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,7 +444,6 @@
 				4A5B76CB1F1F6FFF0044FBE7 /* CustomHeaderView */,
 				4A5B76C31F1F6CEB0044FBE7 /* DynamicCellHeight */,
 				4A5B76B81F1F6AAA0044FBE7 /* MultipleCustomCell */,
-				4A57783E1F0E351500330095 /* Localisation */,
 				4A95D0441F0B6C0800127F38 /* Alamofire */,
 				4AD9413E1F04C75A003F9ADC /* Email ViewController */,
 				4A9D203B1F02626700CD1908 /* SideMenu */,
@@ -630,7 +617,6 @@
 				4A43224C1EF7E45600B0D767 /* 1.png in Resources */,
 				4A5B76BE1F1F6AE60044FBE7 /* RightCustomCell.xib in Resources */,
 				4A5B76D11F1F72B00044FBE7 /* HeaderView.xib in Resources */,
-				4AA2C24D1F0E72F60014AF3E /* Locallization.strings in Resources */,
 				4A0520AB1EFCD7BA004EEC95 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -737,16 +723,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4AA2C24F1F0E72F60014AF3E /* Locallization.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4AA2C2521F0E730E0014AF3E /* en */,
-				4AA2C2531F0E73470014AF3E /* tr */,
-				4AA2C2541F0E734D0014AF3E /* es */,
-			);
-			name = Locallization.strings;
-			sourceTree = "<group>";
-		};
 		4AFA4AA81EE7CA6600B0E972 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
