@@ -144,6 +144,39 @@
             </objects>
             <point key="canvasLocation" x="-1335" y="-124.64788732394366"/>
         </scene>
+        <!--Custom Header View Controller-->
+        <scene sceneID="0zu-oV-vTw">
+            <objects>
+                <viewController storyboardIdentifier="CustomHeaderViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9cK-le-BWS" customClass="CustomHeaderViewController" customModule="SwiftP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="boK-IU-gQy"/>
+                        <viewControllerLayoutGuide type="bottom" id="WJ5-Yy-3Dh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9aH-88-qQA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bg3-CK-AWh">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bg3-CK-AWh" firstAttribute="leading" secondItem="9aH-88-qQA" secondAttribute="leading" id="WLl-we-lUk"/>
+                            <constraint firstAttribute="trailing" secondItem="Bg3-CK-AWh" secondAttribute="trailing" id="l8U-xT-khV"/>
+                            <constraint firstItem="Bg3-CK-AWh" firstAttribute="top" secondItem="boK-IU-gQy" secondAttribute="bottom" id="pDy-gy-6xk"/>
+                            <constraint firstItem="WJ5-Yy-3Dh" firstAttribute="top" secondItem="Bg3-CK-AWh" secondAttribute="bottom" id="xWf-l1-h1A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerTblView" destination="Bg3-CK-AWh" id="fAx-UE-pXX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lji-KV-MIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3543.75" y="542.95774647887322"/>
+        </scene>
         <!--Reveal View Controller-->
         <scene sceneID="FV0-Ez-w0I">
             <objects>
@@ -1118,10 +1151,170 @@
             </objects>
             <point key="canvasLocation" x="-2893" y="1233"/>
         </scene>
+        <!--Multiple Custom Cell View Controller-->
+        <scene sceneID="4Wn-2Q-mXd">
+            <objects>
+                <viewController storyboardIdentifier="MultipleCustomCellViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XGx-Ql-jhp" customClass="MultipleCustomCellViewController" customModule="SwiftP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CZF-fc-1PZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="eJ8-Mr-H3O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wyw-hB-cZi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="McJ-7E-XZg">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eJ8-Mr-H3O" firstAttribute="top" secondItem="McJ-7E-XZg" secondAttribute="bottom" id="93j-D4-RvM"/>
+                            <constraint firstAttribute="trailing" secondItem="McJ-7E-XZg" secondAttribute="trailing" id="dzS-lE-Bls"/>
+                            <constraint firstItem="McJ-7E-XZg" firstAttribute="leading" secondItem="Wyw-hB-cZi" secondAttribute="leading" id="f1O-Oj-PIb"/>
+                            <constraint firstItem="McJ-7E-XZg" firstAttribute="top" secondItem="CZF-fc-1PZ" secondAttribute="bottom" id="upX-Vc-0z5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="demoTblView" destination="McJ-7E-XZg" id="Wes-ik-RjX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KAf-Kk-GGR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2636" y="-125"/>
+        </scene>
+        <!--Blur View Controller-->
+        <scene sceneID="EUM-F5-2iH">
+            <objects>
+                <viewController storyboardIdentifier="BlurViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2CV-Et-oqj" customClass="BlurViewController" customModule="SwiftP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uzo-v5-zz4"/>
+                        <viewControllerLayoutGuide type="bottom" id="fS6-wn-zoB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YxT-dq-A8d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="gZ8-Li-8Hy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5dU-6c-5bt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BlK-qN-8Vl">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fS-T6-Sg4">
+                                            <rect key="frame" x="105" y="269" width="110" height="30"/>
+                                            <state key="normal" title="POP UP"/>
+                                            <connections>
+                                                <action selector="popUpAction:" destination="2CV-Et-oqj" eventType="touchUpInside" id="nGe-zT-fXe"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="3fS-T6-Sg4" secondAttribute="trailing" constant="105" id="8Ur-TH-zGU"/>
+                                        <constraint firstItem="3fS-T6-Sg4" firstAttribute="leading" secondItem="BlK-qN-8Vl" secondAttribute="leading" constant="105" id="S8i-b0-Qdj"/>
+                                        <constraint firstItem="3fS-T6-Sg4" firstAttribute="centerX" secondItem="BlK-qN-8Vl" secondAttribute="centerX" id="d8d-QU-cBS"/>
+                                        <constraint firstItem="3fS-T6-Sg4" firstAttribute="centerY" secondItem="BlK-qN-8Vl" secondAttribute="centerY" id="iIU-Vn-GiP"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5dU-6c-5bt" firstAttribute="top" secondItem="YxT-dq-A8d" secondAttribute="top" id="3gV-8v-RHz"/>
+                            <constraint firstItem="gZ8-Li-8Hy" firstAttribute="leading" secondItem="YxT-dq-A8d" secondAttribute="leading" id="4Jq-jl-qMd"/>
+                            <constraint firstAttribute="trailing" secondItem="gZ8-Li-8Hy" secondAttribute="trailing" id="Pxc-Wg-vUe"/>
+                            <constraint firstItem="gZ8-Li-8Hy" firstAttribute="top" secondItem="YxT-dq-A8d" secondAttribute="top" id="Rkp-ZK-5Wo"/>
+                            <constraint firstItem="fS6-wn-zoB" firstAttribute="top" secondItem="5dU-6c-5bt" secondAttribute="bottom" id="fuE-YY-XUh"/>
+                            <constraint firstItem="5dU-6c-5bt" firstAttribute="leading" secondItem="YxT-dq-A8d" secondAttribute="leading" id="gL1-wz-WDJ"/>
+                            <constraint firstAttribute="trailing" secondItem="5dU-6c-5bt" secondAttribute="trailing" id="sT6-7f-JEm"/>
+                            <constraint firstItem="fS6-wn-zoB" firstAttribute="top" secondItem="gZ8-Li-8Hy" secondAttribute="bottom" id="wRT-gu-uB9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addItemView" destination="oaO-Hv-XjB" id="aDl-eJ-etY"/>
+                        <outlet property="visualEffectView" destination="5dU-6c-5bt" id="x0E-1u-nIB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MuV-2U-0e0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="oaO-Hv-XjB">
+                    <rect key="frame" x="0.0" y="0.0" width="219" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70v-Fo-Lus">
+                            <rect key="frame" x="86" y="98" width="46" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="70v-Fo-Lus" secondAttribute="height" multiplier="23:15" id="Dq5-b2-kC7"/>
+                            </constraints>
+                            <state key="normal" title="Done"/>
+                            <connections>
+                                <action selector="doneAction:" destination="2CV-Et-oqj" eventType="touchUpInside" id="iKQ-rT-8rc"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrM-Tt-seb">
+                            <rect key="frame" x="88" y="20" width="42" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="FrM-Tt-seb" secondAttribute="height" multiplier="2:1" id="hGs-B3-KQW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="FrM-Tt-seb" firstAttribute="top" secondItem="oaO-Hv-XjB" secondAttribute="top" constant="20" id="98T-Aa-soM"/>
+                        <constraint firstAttribute="bottom" secondItem="70v-Fo-Lus" secondAttribute="bottom" id="ExJ-2l-XId"/>
+                        <constraint firstItem="70v-Fo-Lus" firstAttribute="leading" secondItem="oaO-Hv-XjB" secondAttribute="leading" constant="86" id="ZYC-d2-PWT"/>
+                        <constraint firstAttribute="trailing" secondItem="FrM-Tt-seb" secondAttribute="trailing" constant="89" id="djP-pE-ali"/>
+                        <constraint firstAttribute="trailing" secondItem="70v-Fo-Lus" secondAttribute="trailing" constant="87" id="hZF-Al-fzs"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-3917" y="-124"/>
+        </scene>
+        <!--Dynamic Text View Controller-->
+        <scene sceneID="mN5-fn-8ie">
+            <objects>
+                <viewController storyboardIdentifier="DynamicTextViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oNy-Cv-Z6c" customClass="DynamicTextViewController" customModule="SwiftP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U8P-wx-TsU"/>
+                        <viewControllerLayoutGuide type="bottom" id="flo-6T-yAT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wRU-yB-y65">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ndN-3H-I3O">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="flo-6T-yAT" firstAttribute="top" secondItem="ndN-3H-I3O" secondAttribute="bottom" id="4yO-F4-KSF"/>
+                            <constraint firstItem="ndN-3H-I3O" firstAttribute="leading" secondItem="wRU-yB-y65" secondAttribute="leading" id="RVM-YL-3Ar"/>
+                            <constraint firstItem="ndN-3H-I3O" firstAttribute="top" secondItem="U8P-wx-TsU" secondAttribute="bottom" id="cpR-Wn-1IV"/>
+                            <constraint firstAttribute="trailing" secondItem="ndN-3H-I3O" secondAttribute="trailing" id="dwz-RB-myU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dynamicTblView" destination="ndN-3H-I3O" id="n4m-HZ-BFA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fA-8f-m3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3261" y="-124"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1.png" width="25" height="23"/>
         <image name="2.png" width="24" height="23"/>
+        <image name="bg" width="2592" height="1728"/>
         <image name="google.png" width="18" height="18"/>
         <image name="newsbnner.png" width="16" height="16"/>
     </resources>

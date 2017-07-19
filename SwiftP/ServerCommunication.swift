@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import AFNetworking
 
 protocol ClassForServerCommDelegate {
     func onServiceSuccess(responseDictionary : NSDictionary)
@@ -22,11 +23,27 @@ class ServerCommunication: NSObject {
 //        let error:NSError
 //        let parametersDictionary = JSONSerialization.jsonObject(with: data!, options:JSONSerialization.ReadingOptions(rawValue: 0))
         
-        
+        let serviceUrl = String(format: "%@,%@", BASE_URL, serviceName)
+        let data = serviceUrl.data(using: .utf8)
+        do {
+            let parameterDictionary = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! NSDictionary
+            let manager = AFHTTPSessionManager()
+            manager.requestSerializer = AFJSONRequestSerializer()
+            manager.requestSerializer .setValue("application/json", forHTTPHeaderField: "Content-Type")
+            manager.requestSerializer .setValue("application/json", forHTTPHeaderField: "Accept")
+            manager.post(serviceUrl, parameters: parameterDictionary, progress: nil, success: { (operation: URLSessionDataTask, responseObject: Any?) in
+                print("Success")
+            }, failure: {(operation: URLSessionDataTask?, error) in
+                let error =  Error.self
+                print("Failure, error is \(String(describing: error))")
+            })
+        } catch let error as NSError {
+            print("Failed to load: \(error.localizedDescription)")
+        }
     }
     
     //MARK:- ServerCommunication
-    func sendPostParametersWithalamofire(parameterString:[String:Any], serviceName:String) -> Void {
+    func sendPostParametersWithalamofire(parameterString:[String:Any], serviceName:NSString) -> Void {
         let serviceUrl = String(format: "%@%@", BASE_URL, serviceName)
         print("Service Url \(serviceUrl)")
         print("Parameters \(parameterString)")
@@ -57,19 +74,15 @@ class ServerCommunication: NSObject {
         }
     }
     
+    //MARK:- Normal Json Parsing
+    
+    
+    
+    
+    
+    
     
     
     
 }
-//class SeverClass: ClassForServerCommDelegate {
-//    internal func onServiceFailed() {
-//        
-//    }
-//
-//    internal func onServiceSuccess(responseDictionary: NSDictionary) {
-//        
-//    }
-//}
-//calling delegate method
 
-//delegate?:onServiceFailed()

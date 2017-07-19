@@ -35,6 +35,20 @@
 		4A4811A71EE95BC800AAE9A7 /* JsonParsingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4811A61EE95BC800AAE9A7 /* JsonParsingViewController.swift */; };
 		4A5299FD1EFA34F900C09EF2 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5299FC1EFA34F900C09EF2 /* PopUpViewController.swift */; };
 		4A529A001EFA355900C09EF2 /* ViewControllerAsPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5299FF1EFA355900C09EF2 /* ViewControllerAsPopUp.swift */; };
+		4A5B76BD1F1F6AE50044FBE7 /* RightCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B76B91F1F6AE50044FBE7 /* RightCustomCell.swift */; };
+		4A5B76BE1F1F6AE60044FBE7 /* RightCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B76BA1F1F6AE50044FBE7 /* RightCustomCell.xib */; };
+		4A5B76BF1F1F6AE60044FBE7 /* LeftCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B76BB1F1F6AE50044FBE7 /* LeftCustomCell.swift */; };
+		4A5B76C01F1F6AE60044FBE7 /* LeftCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B76BC1F1F6AE50044FBE7 /* LeftCustomCell.xib */; };
+		4A5B76C21F1F6B0E0044FBE7 /* MultipleCustomCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B76C11F1F6B0E0044FBE7 /* MultipleCustomCellViewController.swift */; };
+		4A5B76C71F1F6D100044FBE7 /* DynamicTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B76C41F1F6D100044FBE7 /* DynamicTextViewController.swift */; };
+		4A5B76C81F1F6D100044FBE7 /* DynamicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B76C51F1F6D100044FBE7 /* DynamicCell.swift */; };
+		4A5B76C91F1F6D100044FBE7 /* DynamicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B76C61F1F6D100044FBE7 /* DynamicCell.xib */; };
+		4A5B76CD1F1F701A0044FBE7 /* CustomHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B76CC1F1F701A0044FBE7 /* CustomHeaderViewController.swift */; };
+		4A5B76D01F1F72B00044FBE7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B76CE1F1F72B00044FBE7 /* HeaderView.swift */; };
+		4A5B76D11F1F72B00044FBE7 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B76CF1F1F72B00044FBE7 /* HeaderView.xib */; };
+		4A5B76D41F1F78CA0044FBE7 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B76D21F1F78CA0044FBE7 /* CustomCell.swift */; };
+		4A5B76D51F1F78CA0044FBE7 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A5B76D31F1F78CA0044FBE7 /* CustomCell.xib */; };
+		4A5B76D81F1F82520044FBE7 /* BlurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B76D71F1F82520044FBE7 /* BlurViewController.swift */; };
 		4A61909E1F02720000479861 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A61909D1F02720000479861 /* SWRevealViewController.m */; };
 		4A6190A01F02780200479861 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A61909F1F02780200479861 /* MenuViewController.swift */; };
 		4A6190A21F02853E00479861 /* MenuItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6190A11F02853D00479861 /* MenuItemsViewController.swift */; };
@@ -92,6 +106,20 @@
 		4A5299FF1EFA355900C09EF2 /* ViewControllerAsPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAsPopUp.swift; sourceTree = "<group>"; };
 		4A5778D01F0E47A800330095 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		4A5778D11F0E47B700330095 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		4A5B76B91F1F6AE50044FBE7 /* RightCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightCustomCell.swift; sourceTree = "<group>"; };
+		4A5B76BA1F1F6AE50044FBE7 /* RightCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightCustomCell.xib; sourceTree = "<group>"; };
+		4A5B76BB1F1F6AE50044FBE7 /* LeftCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftCustomCell.swift; sourceTree = "<group>"; };
+		4A5B76BC1F1F6AE50044FBE7 /* LeftCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftCustomCell.xib; sourceTree = "<group>"; };
+		4A5B76C11F1F6B0E0044FBE7 /* MultipleCustomCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleCustomCellViewController.swift; sourceTree = "<group>"; };
+		4A5B76C41F1F6D100044FBE7 /* DynamicTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTextViewController.swift; sourceTree = "<group>"; };
+		4A5B76C51F1F6D100044FBE7 /* DynamicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicCell.swift; sourceTree = "<group>"; };
+		4A5B76C61F1F6D100044FBE7 /* DynamicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicCell.xib; sourceTree = "<group>"; };
+		4A5B76CC1F1F701A0044FBE7 /* CustomHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderViewController.swift; sourceTree = "<group>"; };
+		4A5B76CE1F1F72B00044FBE7 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		4A5B76CF1F1F72B00044FBE7 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		4A5B76D21F1F78CA0044FBE7 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		4A5B76D31F1F78CA0044FBE7 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		4A5B76D71F1F82520044FBE7 /* BlurViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurViewController.swift; sourceTree = "<group>"; };
 		4A61909B1F0271FC00479861 /* SwiftP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftP-Bridging-Header.h"; sourceTree = "<group>"; };
 		4A61909C1F02720000479861 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		4A61909D1F02720000479861 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -282,6 +310,48 @@
 			name = Localisation;
 			sourceTree = "<group>";
 		};
+		4A5B76B81F1F6AAA0044FBE7 /* MultipleCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				4A5B76C11F1F6B0E0044FBE7 /* MultipleCustomCellViewController.swift */,
+				4A5B76B91F1F6AE50044FBE7 /* RightCustomCell.swift */,
+				4A5B76BA1F1F6AE50044FBE7 /* RightCustomCell.xib */,
+				4A5B76BB1F1F6AE50044FBE7 /* LeftCustomCell.swift */,
+				4A5B76BC1F1F6AE50044FBE7 /* LeftCustomCell.xib */,
+			);
+			name = MultipleCustomCell;
+			sourceTree = "<group>";
+		};
+		4A5B76C31F1F6CEB0044FBE7 /* DynamicCellHeight */ = {
+			isa = PBXGroup;
+			children = (
+				4A5B76C41F1F6D100044FBE7 /* DynamicTextViewController.swift */,
+				4A5B76C51F1F6D100044FBE7 /* DynamicCell.swift */,
+				4A5B76C61F1F6D100044FBE7 /* DynamicCell.xib */,
+			);
+			name = DynamicCellHeight;
+			sourceTree = "<group>";
+		};
+		4A5B76CB1F1F6FFF0044FBE7 /* CustomHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				4A5B76CC1F1F701A0044FBE7 /* CustomHeaderViewController.swift */,
+				4A5B76D21F1F78CA0044FBE7 /* CustomCell.swift */,
+				4A5B76D31F1F78CA0044FBE7 /* CustomCell.xib */,
+				4A5B76CE1F1F72B00044FBE7 /* HeaderView.swift */,
+				4A5B76CF1F1F72B00044FBE7 /* HeaderView.xib */,
+			);
+			name = CustomHeaderView;
+			sourceTree = "<group>";
+		};
+		4A5B76D61F1F82370044FBE7 /* BlurViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4A5B76D71F1F82520044FBE7 /* BlurViewController.swift */,
+			);
+			name = BlurViewController;
+			sourceTree = "<group>";
+		};
 		4A6190A71F02908900479861 /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +359,14 @@
 				4A61909D1F02720000479861 /* SWRevealViewController.m */,
 			);
 			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		4A80F6A61F0FA6DD009A3926 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4AFA4AC41EE7FEAB00B0E972 /* ServerCommunication */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		4A95D0441F0B6C0800127F38 /* Alamofire */ = {
@@ -360,6 +438,7 @@
 			children = (
 				4A79619A1F0A48AA00D4B3BE /* SwiftP.entitlements */,
 				4AFA4AB61EE7CAAD00B0E972 /* ViewControllers */,
+				4A80F6A61F0FA6DD009A3926 /* Models */,
 				4AFA4AA81EE7CA6600B0E972 /* Main.storyboard */,
 				4A61909B1F0271FC00479861 /* SwiftP-Bridging-Header.h */,
 				4AFA4AAB1EE7CA6700B0E972 /* Assets.xcassets */,
@@ -373,6 +452,10 @@
 		4AFA4AB61EE7CAAD00B0E972 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4A5B76D61F1F82370044FBE7 /* BlurViewController */,
+				4A5B76CB1F1F6FFF0044FBE7 /* CustomHeaderView */,
+				4A5B76C31F1F6CEB0044FBE7 /* DynamicCellHeight */,
+				4A5B76B81F1F6AAA0044FBE7 /* MultipleCustomCell */,
 				4A57783E1F0E351500330095 /* Localisation */,
 				4A95D0441F0B6C0800127F38 /* Alamofire */,
 				4AD9413E1F04C75A003F9ADC /* Email ViewController */,
@@ -438,7 +521,6 @@
 		4AFA4AC51EE7FEC100B0E972 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				4AFA4AC41EE7FEAB00B0E972 /* ServerCommunication */,
 				4A4811981EE9490C00AAE9A7 /* CollectionViewController */,
 			);
 			name = Helper;
@@ -532,17 +614,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AFA4AAF1EE7CA6700B0E972 /* LaunchScreen.storyboard in Resources */,
+				4A5B76C91F1F6D100044FBE7 /* DynamicCell.xib in Resources */,
 				4AFA4AAC1EE7CA6700B0E972 /* Assets.xcassets in Resources */,
 				4AE013B21F03A6C7000EDCE9 /* MenuHeaderCell.xib in Resources */,
 				4A33FDEC1EF1671500F89138 /* newsbnner@3x.png in Resources */,
 				4A33FDE71EF1331F00F89138 /* CollectionDemoCell.xib in Resources */,
 				4A4811A31EE94C6500AAE9A7 /* 2.jpg in Resources */,
 				4A6190A61F0288B400479861 /* MenuItemCell.xib in Resources */,
+				4A5B76D51F1F78CA0044FBE7 /* CustomCell.xib in Resources */,
 				4A4811A21EE94C6500AAE9A7 /* 1.jpg in Resources */,
 				4A43224D1EF7E45600B0D767 /* 2.png in Resources */,
+				4A5B76C01F1F6AE60044FBE7 /* LeftCustomCell.xib in Resources */,
 				4AFA4AAA1EE7CA6600B0E972 /* Main.storyboard in Resources */,
 				4A4811A41EE94C6500AAE9A7 /* 3.jpg in Resources */,
 				4A43224C1EF7E45600B0D767 /* 1.png in Resources */,
+				4A5B76BE1F1F6AE60044FBE7 /* RightCustomCell.xib in Resources */,
+				4A5B76D11F1F72B00044FBE7 /* HeaderView.xib in Resources */,
 				4AA2C24D1F0E72F60014AF3E /* Locallization.strings in Resources */,
 				4A0520AB1EFCD7BA004EEC95 /* GoogleService-Info.plist in Resources */,
 			);
@@ -603,12 +690,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5B76C21F1F6B0E0044FBE7 /* MultipleCustomCellViewController.swift in Sources */,
 				4AFA4AC71EE7FEF800B0E972 /* ServerCommunication.swift in Sources */,
 				4A2966521EFBB5AC00EF66FB /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */,
 				4A2966541EFBB5AC00EF66FB /* MenuItemView.swift in Sources */,
 				4A6190A51F0288B400479861 /* MenuItemCell.swift in Sources */,
 				4A6190A01F02780200479861 /* MenuViewController.swift in Sources */,
 				4A529A001EFA355900C09EF2 /* ViewControllerAsPopUp.swift in Sources */,
+				4A5B76BD1F1F6AE50044FBE7 /* RightCustomCell.swift in Sources */,
 				4A29664E1EFBB5AC00EF66FB /* CAPSPageMenu.swift in Sources */,
 				4A3BF1341EF2873D003E45F5 /* DataPassingViewController.swift in Sources */,
 				4A1F39351EEE8BC5002C2AC8 /* ScroolingImagesController.swift in Sources */,
@@ -623,11 +712,18 @@
 				4A2966381EFB8DC100EF66FB /* PageMenuController.swift in Sources */,
 				4AFA4AA51EE7CA6600B0E972 /* AppDelegate.swift in Sources */,
 				4AE013B11F03A6C7000EDCE9 /* MenuHeaderCell.swift in Sources */,
+				4A5B76D41F1F78CA0044FBE7 /* CustomCell.swift in Sources */,
+				4A5B76BF1F1F6AE60044FBE7 /* LeftCustomCell.swift in Sources */,
+				4A5B76C71F1F6D100044FBE7 /* DynamicTextViewController.swift in Sources */,
+				4A5B76CD1F1F701A0044FBE7 /* CustomHeaderViewController.swift in Sources */,
+				4A5B76D01F1F72B00044FBE7 /* HeaderView.swift in Sources */,
+				4A5B76D81F1F82520044FBE7 /* BlurViewController.swift in Sources */,
 				4AFA4AB81EE7CACC00B0E972 /* MainViewController.swift in Sources */,
 				4A48119A1EE9493700AAE9A7 /* CollectionViewController.swift in Sources */,
 				4A5299FD1EFA34F900C09EF2 /* PopUpViewController.swift in Sources */,
 				4A33FDE61EF1331F00F89138 /* CollectionDemoCell.swift in Sources */,
 				4A4811A71EE95BC800AAE9A7 /* JsonParsingViewController.swift in Sources */,
+				4A5B76C81F1F6D100044FBE7 /* DynamicCell.swift in Sources */,
 				4A6190A21F02853E00479861 /* MenuItemsViewController.swift in Sources */,
 				4A33FDEA1EF1614F00F89138 /* PhotoViewController.swift in Sources */,
 				4AD941401F04C908003F9ADC /* EmailViewController.swift in Sources */,

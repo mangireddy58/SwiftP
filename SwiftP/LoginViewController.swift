@@ -32,10 +32,11 @@ var parentNavigationController : UINavigationController?
         }
         else {
 //            let loginParams:[String:Any] = String(format: LOGIN_PARAMETERS, self.userNameTxtFld.text!, self.passwordTxtFld.text!)
-            let loginParam:[String:Any] = ["username":userNameTxtFld.text!, "password":passwordTxtFld.text!, "iosId":"53454353fdfre4refwe432r3ewd34tr34t54y"]
+            let deviceId = "wrwer34fr436tr4fgt54gtrtg56yhgtrhy65h65"
+            let loginParams = String(format: LOGIN_PARAMETERS, userNameTxtFld.text!, passwordTxtFld.text!, deviceId)
             let serverCommObj = ServerCommunication()
             serverCommObj.delegate = self
-            serverCommObj .sendPostParametersWithalamofire(parameterString: loginParam, serviceName: LOGIN_SERVICE_NAME)
+            //serverCommObj .sendPostParametersWithalamofire(parameterString: loginParams, serviceName: LOGIN_SERVICE_NAME)
             
         /*let url = "https://restcountries.eu/rest/v1/all"
             let serviceUrl = ""

@@ -14,8 +14,8 @@ import Alamofire
 import SwiftyJSON
 
 let BASE_URL =  "http://bunker360v3.cloudapp.net/JsonService.svc/GetListaNotifications"
-let LOGIN_SERVICE_NAME:String = "login"
-let LOGIN_PARAMETERS:[String:Any] = ["email":"", "password":"", "iosId":""]
+let LOGIN_SERVICE_NAME = "login"
+let LOGIN_PARAMETERS = "{\"user\": {\"email\": \"%@\",\"password\": \"%@\"},\"userPersonalDetails\": {\"iosId\":\"%@\"}}"
 
 var Bounds = UIScreen.main.bounds
 var Height = Bounds.size.height
@@ -61,7 +61,7 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     }
     // Login ViewController
     func fnForLoginViewController() {
-        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "AlamoFireViewController") as! AlamoFireViewController
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "BlurViewController") as! BlurViewController
         self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     //MARK:- Valid EmailId
