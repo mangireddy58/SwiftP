@@ -1,17 +1,17 @@
 //
-//  DynamicCell.swift
-//  PrototypeCells
+//  DynamicCell2.swift
+//  SwiftP
 //
-//  Created by Rushikesh Kulkarni on 19/07/17.
+//  Created by Rushikesh Kulkarni on 20/07/17.
 //  Copyright © 2017 simplicity. All rights reserved.
 //
 
 import UIKit
 
-class DynamicCell: UITableViewCell {
+class DynamicCell2: UITableViewCell {
 
-    @IBOutlet weak var dataTxtView: UITextView!
     @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet weak var dataLabel2: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

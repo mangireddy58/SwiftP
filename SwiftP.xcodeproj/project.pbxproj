@@ -18,6 +18,11 @@
 		4A2966521EFBB5AC00EF66FB /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A29664B1EFBB5AC00EF66FB /* CAPSPageMenu+UIScrollViewDelegate.swift */; };
 		4A2966531EFBB5AC00EF66FB /* CAPSPageMenuConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A29664C1EFBB5AC00EF66FB /* CAPSPageMenuConfiguration.swift */; };
 		4A2966541EFBB5AC00EF66FB /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A29664D1EFBB5AC00EF66FB /* MenuItemView.swift */; };
+		4A29A92A1F208E2D003E85F9 /* DynamicCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A29A9281F208E2C003E85F9 /* DynamicCell2.swift */; };
+		4A29A92B1F208E2D003E85F9 /* DynamicCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A29A9291F208E2C003E85F9 /* DynamicCell2.xib */; };
+		4A29A92E1F20BD46003E85F9 /* DownloadJsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A29A92D1F20BD46003E85F9 /* DownloadJsonViewController.swift */; };
+		4A29A9301F20BD89003E85F9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A29A92F1F20BD89003E85F9 /* TableViewCell.swift */; };
+		4A29A9321F20BE0B003E85F9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A29A9311F20BE0B003E85F9 /* DetailViewController.swift */; };
 		4A33FDE31EF1321200F89138 /* CollectionDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33FDE21EF1321100F89138 /* CollectionDemoController.swift */; };
 		4A33FDE61EF1331F00F89138 /* CollectionDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33FDE41EF1331F00F89138 /* CollectionDemoCell.swift */; };
 		4A33FDE71EF1331F00F89138 /* CollectionDemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A33FDE51EF1331F00F89138 /* CollectionDemoCell.xib */; };
@@ -86,6 +91,11 @@
 		4A29664B1EFBB5AC00EF66FB /* CAPSPageMenu+UIScrollViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
 		4A29664C1EFBB5AC00EF66FB /* CAPSPageMenuConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenuConfiguration.swift; sourceTree = "<group>"; };
 		4A29664D1EFBB5AC00EF66FB /* MenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		4A29A9281F208E2C003E85F9 /* DynamicCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicCell2.swift; sourceTree = "<group>"; };
+		4A29A9291F208E2C003E85F9 /* DynamicCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicCell2.xib; sourceTree = "<group>"; };
+		4A29A92D1F20BD46003E85F9 /* DownloadJsonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadJsonViewController.swift; sourceTree = "<group>"; };
+		4A29A92F1F20BD89003E85F9 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4A29A9311F20BE0B003E85F9 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4A33FDE21EF1321100F89138 /* CollectionDemoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDemoController.swift; sourceTree = "<group>"; };
 		4A33FDE41EF1331F00F89138 /* CollectionDemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDemoCell.swift; sourceTree = "<group>"; };
 		4A33FDE51EF1331F00F89138 /* CollectionDemoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionDemoCell.xib; sourceTree = "<group>"; };
@@ -156,9 +166,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A79619F1F0A584000D4B3BE /* UserNotificationsUI.framework in Frameworks */,
 				4A7961A11F0A61A100D4B3BE /* AudioToolbox.framework in Frameworks */,
 				4A79619E1F0A584000D4B3BE /* UserNotifications.framework in Frameworks */,
-				4A79619F1F0A584000D4B3BE /* UserNotificationsUI.framework in Frameworks */,
 				4AD941431F04C945003F9ADC /* Messages.framework in Frameworks */,
 				4AD941441F04C945003F9ADC /* MessageUI.framework in Frameworks */,
 				D1877270C60390418D2EF501 /* Pods_SwiftP.framework in Frameworks */,
@@ -235,6 +245,16 @@
 				4A29664D1EFBB5AC00EF66FB /* MenuItemView.swift */,
 			);
 			name = PageMenu;
+			sourceTree = "<group>";
+		};
+		4A29A92C1F20BCD3003E85F9 /* DownloadingJsonData */ = {
+			isa = PBXGroup;
+			children = (
+				4A29A92D1F20BD46003E85F9 /* DownloadJsonViewController.swift */,
+				4A29A92F1F20BD89003E85F9 /* TableViewCell.swift */,
+				4A29A9311F20BE0B003E85F9 /* DetailViewController.swift */,
+			);
+			name = DownloadingJsonData;
 			sourceTree = "<group>";
 		};
 		4A33FDE11EF0FEB300F89138 /* CollectionDemoViewController */ = {
@@ -316,6 +336,8 @@
 				4A5B76C41F1F6D100044FBE7 /* DynamicTextViewController.swift */,
 				4A5B76C51F1F6D100044FBE7 /* DynamicCell.swift */,
 				4A5B76C61F1F6D100044FBE7 /* DynamicCell.xib */,
+				4A29A9281F208E2C003E85F9 /* DynamicCell2.swift */,
+				4A29A9291F208E2C003E85F9 /* DynamicCell2.xib */,
 			);
 			name = DynamicCellHeight;
 			sourceTree = "<group>";
@@ -440,6 +462,7 @@
 		4AFA4AB61EE7CAAD00B0E972 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4A29A92C1F20BCD3003E85F9 /* DownloadingJsonData */,
 				4A5B76D61F1F82370044FBE7 /* BlurViewController */,
 				4A5B76CB1F1F6FFF0044FBE7 /* CustomHeaderView */,
 				4A5B76C31F1F6CEB0044FBE7 /* DynamicCellHeight */,
@@ -561,7 +584,6 @@
 				TargetAttributes = {
 					4AFA4AA01EE7CA6600B0E972 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = MR2PX4Y62Y;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -601,6 +623,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AFA4AAF1EE7CA6700B0E972 /* LaunchScreen.storyboard in Resources */,
+				4A29A92B1F208E2D003E85F9 /* DynamicCell2.xib in Resources */,
 				4A5B76C91F1F6D100044FBE7 /* DynamicCell.xib in Resources */,
 				4AFA4AAC1EE7CA6700B0E972 /* Assets.xcassets in Resources */,
 				4AE013B21F03A6C7000EDCE9 /* MenuHeaderCell.xib in Resources */,
@@ -684,6 +707,7 @@
 				4A6190A01F02780200479861 /* MenuViewController.swift in Sources */,
 				4A529A001EFA355900C09EF2 /* ViewControllerAsPopUp.swift in Sources */,
 				4A5B76BD1F1F6AE50044FBE7 /* RightCustomCell.swift in Sources */,
+				4A29A92A1F208E2D003E85F9 /* DynamicCell2.swift in Sources */,
 				4A29664E1EFBB5AC00EF66FB /* CAPSPageMenu.swift in Sources */,
 				4A3BF1341EF2873D003E45F5 /* DataPassingViewController.swift in Sources */,
 				4A1F39351EEE8BC5002C2AC8 /* ScroolingImagesController.swift in Sources */,
@@ -692,6 +716,7 @@
 				4A0EF6AC1EEA8088009E87AE /* RegisterViewController.swift in Sources */,
 				4AFA4AC01EE7DC3B00B0E972 /* LoginViewController.swift in Sources */,
 				4A95D0461F0B709D00127F38 /* AlamoFireViewController.swift in Sources */,
+				4A29A9301F20BD89003E85F9 /* TableViewCell.swift in Sources */,
 				4A48119D1EE949A800AAE9A7 /* CollectionViewCell.swift in Sources */,
 				4A2966531EFBB5AC00EF66FB /* CAPSPageMenuConfiguration.swift in Sources */,
 				4A3BF1361EF2875E003E45F5 /* DataReceiveViewController.swift in Sources */,
@@ -701,7 +726,9 @@
 				4A5B76D41F1F78CA0044FBE7 /* CustomCell.swift in Sources */,
 				4A5B76BF1F1F6AE60044FBE7 /* LeftCustomCell.swift in Sources */,
 				4A5B76C71F1F6D100044FBE7 /* DynamicTextViewController.swift in Sources */,
+				4A29A9321F20BE0B003E85F9 /* DetailViewController.swift in Sources */,
 				4A5B76CD1F1F701A0044FBE7 /* CustomHeaderViewController.swift in Sources */,
+				4A29A92E1F20BD46003E85F9 /* DownloadJsonViewController.swift in Sources */,
 				4A5B76D01F1F72B00044FBE7 /* HeaderView.swift in Sources */,
 				4A5B76D81F1F82520044FBE7 /* BlurViewController.swift in Sources */,
 				4AFA4AB81EE7CACC00B0E972 /* MainViewController.swift in Sources */,
@@ -844,7 +871,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SwiftP/SwiftP.entitlements;
-				DEVELOPMENT_TEAM = MR2PX4Y62Y;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -869,7 +896,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SwiftP/SwiftP.entitlements;
-				DEVELOPMENT_TEAM = MR2PX4Y62Y;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

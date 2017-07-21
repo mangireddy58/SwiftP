@@ -27,6 +27,7 @@ class CustomHeaderViewController: UIViewController, UITableViewDataSource, UITab
         
         let nib = UINib(nibName: "CustomCell", bundle: nil)
         self.headerTblView.register(nib, forCellReuseIdentifier: "Cell")
+        
         arrayOfData = [headerStruct.init(image: #imageLiteral(resourceName: "heart"), name: "Header"),headerStruct.init(image: #imageLiteral(resourceName: "heart"), name: "Header"),headerStruct.init(image: #imageLiteral(resourceName: "heart"), name: "Header"),headerStruct.init(image: #imageLiteral(resourceName: "heart"), name: "Header"),headerStruct.init(image: #imageLiteral(resourceName: "heart"), name: "Header"),headerStruct.init(image: #imageLiteral(resourceName: "heart"), name: "Header"),headerStruct.init(image: #imageLiteral(resourceName: "heart"), name: "Header")]
     }
     func numberOfSections(in tableView: UITableView) -> Int {
