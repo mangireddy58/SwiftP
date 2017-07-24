@@ -144,6 +144,42 @@
             </objects>
             <point key="canvasLocation" x="-1335" y="-124.64788732394366"/>
         </scene>
+        <!--Url Session View Controller-->
+        <scene sceneID="h3Z-kG-ZoN">
+            <objects>
+                <viewController storyboardIdentifier="NSUrlSessionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="scK-Tb-4wu" customClass="NSUrlSessionViewController" customModule="SwiftP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lq2-Po-bwo"/>
+                        <viewControllerLayoutGuide type="bottom" id="T4W-ob-hWa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xgp-0z-MPl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kda-gb-hI4">
+                                <rect key="frame" x="137" y="204" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="GET"/>
+                                <connections>
+                                    <action selector="getAction:" destination="scK-Tb-4wu" eventType="touchUpInside" id="0hj-bW-u9o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHT-6u-8in">
+                                <rect key="frame" x="137" y="281" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="POST"/>
+                                <connections>
+                                    <action selector="postAction:" destination="scK-Tb-4wu" eventType="touchUpInside" id="ImN-vC-gfj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fSN-vi-02U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4170" y="542.95774647887322"/>
+        </scene>
         <!--Custom Header View Controller-->
         <scene sceneID="0zu-oV-vTw">
             <objects>

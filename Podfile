@@ -18,6 +18,6 @@ target 'SwiftP' do
  pod 'Alamofire', '~>4.4'
  pod 'SwiftyJSON'
  pod 'AFNetworking'
- 
+ pod 'SDWebImage'
 
 end

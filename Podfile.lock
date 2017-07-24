@@ -105,6 +105,7 @@ DEPENDENCIES:
   - PageMenu
   - RMUniversalAlert
   - SCLAlertView
+  - SDWebImage
   - SDWebImage (~> 3.8)
   - SwiftyJSON
   - XLActionController
@@ -138,6 +139,6 @@ SPEC CHECKSUMS:
   UIAlertView+Blocks: a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
   XLActionController: 57fe0ce1642e2eed971b188b490762345fdbf963
 
-PODFILE CHECKSUM: f712b0d05d4b5fd627ef92ef3e24d8107d9417e9
+PODFILE CHECKSUM: e3e6daaf96a5232f77ac9fdab05293791c02069f
 
 COCOAPODS: 1.2.1

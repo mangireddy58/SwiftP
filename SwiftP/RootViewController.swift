@@ -61,7 +61,7 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     }
     // Login ViewController
     func fnForLoginViewController() {
-        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "DownloadJsonViewController") as! DownloadJsonViewController
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "NSUrlSessionViewController") as! NSUrlSessionViewController
         self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     //MARK:- Valid EmailId

@@ -68,6 +68,7 @@
 		4AD941441F04C945003F9ADC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD941421F04C945003F9ADC /* MessageUI.framework */; };
 		4AE013B11F03A6C7000EDCE9 /* MenuHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE013AF1F03A6C7000EDCE9 /* MenuHeaderCell.swift */; };
 		4AE013B21F03A6C7000EDCE9 /* MenuHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE013B01F03A6C7000EDCE9 /* MenuHeaderCell.xib */; };
+		4AF882F11F26073200DFBF67 /* NSUrlSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF882F01F26073100DFBF67 /* NSUrlSessionViewController.swift */; };
 		4AFA4AA51EE7CA6600B0E972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA4AA41EE7CA6600B0E972 /* AppDelegate.swift */; };
 		4AFA4AAA1EE7CA6600B0E972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AFA4AA81EE7CA6600B0E972 /* Main.storyboard */; };
 		4AFA4AAC1EE7CA6700B0E972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AFA4AAB1EE7CA6700B0E972 /* Assets.xcassets */; };
@@ -146,6 +147,7 @@
 		4AD941421F04C945003F9ADC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		4AE013AF1F03A6C7000EDCE9 /* MenuHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuHeaderCell.swift; sourceTree = "<group>"; };
 		4AE013B01F03A6C7000EDCE9 /* MenuHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuHeaderCell.xib; sourceTree = "<group>"; };
+		4AF882F01F26073100DFBF67 /* NSUrlSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUrlSessionViewController.swift; sourceTree = "<group>"; };
 		4AFA4AA11EE7CA6600B0E972 /* SwiftP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFA4AA41EE7CA6600B0E972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AFA4AA91EE7CA6600B0E972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -425,6 +427,14 @@
 			name = MenuHeaderView;
 			sourceTree = "<group>";
 		};
+		4AF882EA1F25C21400DFBF67 /* NSUrlsession */ = {
+			isa = PBXGroup;
+			children = (
+				4AF882F01F26073100DFBF67 /* NSUrlSessionViewController.swift */,
+			);
+			name = NSUrlsession;
+			sourceTree = "<group>";
+		};
 		4AFA4A981EE7CA6500B0E972 = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +472,7 @@
 		4AFA4AB61EE7CAAD00B0E972 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4AF882EA1F25C21400DFBF67 /* NSUrlsession */,
 				4A29A92C1F20BCD3003E85F9 /* DownloadingJsonData */,
 				4A5B76D61F1F82370044FBE7 /* BlurViewController */,
 				4A5B76CB1F1F6FFF0044FBE7 /* CustomHeaderView */,
@@ -584,6 +595,7 @@
 				TargetAttributes = {
 					4AFA4AA01EE7CA6600B0E972 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MR2PX4Y62Y;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -710,6 +722,7 @@
 				4A29A92A1F208E2D003E85F9 /* DynamicCell2.swift in Sources */,
 				4A29664E1EFBB5AC00EF66FB /* CAPSPageMenu.swift in Sources */,
 				4A3BF1341EF2873D003E45F5 /* DataPassingViewController.swift in Sources */,
+				4AF882F11F26073200DFBF67 /* NSUrlSessionViewController.swift in Sources */,
 				4A1F39351EEE8BC5002C2AC8 /* ScroolingImagesController.swift in Sources */,
 				4A61909E1F02720000479861 /* SWRevealViewController.m in Sources */,
 				4A2966501EFBB5AC00EF66FB /* CAPSPageMenu+UIConfiguration.swift in Sources */,
@@ -871,7 +884,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SwiftP/SwiftP.entitlements;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = MR2PX4Y62Y;
 				INFOPLIST_FILE = SwiftP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -896,7 +909,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SwiftP/SwiftP.entitlements;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = MR2PX4Y62Y;
 				INFOPLIST_FILE = SwiftP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

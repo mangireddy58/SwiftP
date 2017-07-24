@@ -36,6 +36,7 @@ var parentNavigationController : UINavigationController?
             let loginParams = String(format: LOGIN_PARAMETERS, userNameTxtFld.text!, passwordTxtFld.text!, deviceId)
             let serverCommObj = ServerCommunication()
             serverCommObj.delegate = self
+            print("",loginParams)
             //serverCommObj .sendPostParametersWithalamofire(parameterString: loginParams, serviceName: LOGIN_SERVICE_NAME)
             
         /*let url = "https://restcountries.eu/rest/v1/all"
