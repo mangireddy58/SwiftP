@@ -30,6 +30,10 @@
 		4A33FDEC1EF1671500F89138 /* newsbnner@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A33FDEB1EF1671500F89138 /* newsbnner@3x.png */; };
 		4A3BF1341EF2873D003E45F5 /* DataPassingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3BF1331EF2873C003E45F5 /* DataPassingViewController.swift */; };
 		4A3BF1361EF2875E003E45F5 /* DataReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3BF1351EF2875E003E45F5 /* DataReceiveViewController.swift */; };
+		4A3D6E8A1F2726AB0068139F /* ScrollingImagesWithXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D6E891F2726AB0068139F /* ScrollingImagesWithXib.swift */; };
+		4A3D6E8D1F2726CF0068139F /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D6E8B1F2726CF0068139F /* FeatureView.swift */; };
+		4A3D6E8E1F2726CF0068139F /* Feature.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3D6E8C1F2726CF0068139F /* Feature.xib */; };
+		4A3D6E911F2740930068139F /* QRCodeGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D6E901F2740930068139F /* QRCodeGeneratorViewController.swift */; };
 		4A43224C1EF7E45600B0D767 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A43224A1EF7E45600B0D767 /* 1.png */; };
 		4A43224D1EF7E45600B0D767 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A43224B1EF7E45600B0D767 /* 2.png */; };
 		4A48119A1EE9493700AAE9A7 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4811991EE9493700AAE9A7 /* CollectionViewController.swift */; };
@@ -104,6 +108,10 @@
 		4A33FDEB1EF1671500F89138 /* newsbnner@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newsbnner@3x.png"; sourceTree = "<group>"; };
 		4A3BF1331EF2873C003E45F5 /* DataPassingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPassingViewController.swift; sourceTree = "<group>"; };
 		4A3BF1351EF2875E003E45F5 /* DataReceiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataReceiveViewController.swift; sourceTree = "<group>"; };
+		4A3D6E891F2726AB0068139F /* ScrollingImagesWithXib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingImagesWithXib.swift; sourceTree = "<group>"; };
+		4A3D6E8B1F2726CF0068139F /* FeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureView.swift; sourceTree = "<group>"; };
+		4A3D6E8C1F2726CF0068139F /* Feature.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Feature.xib; sourceTree = "<group>"; };
+		4A3D6E901F2740930068139F /* QRCodeGeneratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeGeneratorViewController.swift; sourceTree = "<group>"; };
 		4A43224A1EF7E45600B0D767 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		4A43224B1EF7E45600B0D767 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		4A4811991EE9493700AAE9A7 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +221,7 @@
 		4A1F39331EEE8B99002C2AC8 /* Scrolling Images */ = {
 			isa = PBXGroup;
 			children = (
+				4A3D6E881F2726640068139F /* ScrollingWithXib */,
 				4A1F39341EEE8BC5002C2AC8 /* ScroolingImagesController.swift */,
 			);
 			name = "Scrolling Images";
@@ -284,6 +293,24 @@
 				4A3BF1351EF2875E003E45F5 /* DataReceiveViewController.swift */,
 			);
 			name = "DataPassing ViewController";
+			sourceTree = "<group>";
+		};
+		4A3D6E881F2726640068139F /* ScrollingWithXib */ = {
+			isa = PBXGroup;
+			children = (
+				4A3D6E891F2726AB0068139F /* ScrollingImagesWithXib.swift */,
+				4A3D6E8B1F2726CF0068139F /* FeatureView.swift */,
+				4A3D6E8C1F2726CF0068139F /* Feature.xib */,
+			);
+			name = ScrollingWithXib;
+			sourceTree = "<group>";
+		};
+		4A3D6E8F1F2740720068139F /* QRCodeGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				4A3D6E901F2740930068139F /* QRCodeGeneratorViewController.swift */,
+			);
+			name = QRCodeGenerator;
 			sourceTree = "<group>";
 		};
 		4A4811981EE9490C00AAE9A7 /* CollectionViewController */ = {
@@ -472,6 +499,7 @@
 		4AFA4AB61EE7CAAD00B0E972 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4A3D6E8F1F2740720068139F /* QRCodeGenerator */,
 				4AF882EA1F25C21400DFBF67 /* NSUrlsession */,
 				4A29A92C1F20BCD3003E85F9 /* DownloadingJsonData */,
 				4A5B76D61F1F82370044FBE7 /* BlurViewController */,
@@ -650,6 +678,7 @@
 				4AFA4AAA1EE7CA6600B0E972 /* Main.storyboard in Resources */,
 				4A4811A41EE94C6500AAE9A7 /* 3.jpg in Resources */,
 				4A43224C1EF7E45600B0D767 /* 1.png in Resources */,
+				4A3D6E8E1F2726CF0068139F /* Feature.xib in Resources */,
 				4A5B76BE1F1F6AE60044FBE7 /* RightCustomCell.xib in Resources */,
 				4A5B76D11F1F72B00044FBE7 /* HeaderView.xib in Resources */,
 				4A0520AB1EFCD7BA004EEC95 /* GoogleService-Info.plist in Resources */,
@@ -714,10 +743,12 @@
 				4A5B76C21F1F6B0E0044FBE7 /* MultipleCustomCellViewController.swift in Sources */,
 				4AFA4AC71EE7FEF800B0E972 /* ServerCommunication.swift in Sources */,
 				4A2966521EFBB5AC00EF66FB /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */,
+				4A3D6E8D1F2726CF0068139F /* FeatureView.swift in Sources */,
 				4A2966541EFBB5AC00EF66FB /* MenuItemView.swift in Sources */,
 				4A6190A51F0288B400479861 /* MenuItemCell.swift in Sources */,
 				4A6190A01F02780200479861 /* MenuViewController.swift in Sources */,
 				4A529A001EFA355900C09EF2 /* ViewControllerAsPopUp.swift in Sources */,
+				4A3D6E8A1F2726AB0068139F /* ScrollingImagesWithXib.swift in Sources */,
 				4A5B76BD1F1F6AE50044FBE7 /* RightCustomCell.swift in Sources */,
 				4A29A92A1F208E2D003E85F9 /* DynamicCell2.swift in Sources */,
 				4A29664E1EFBB5AC00EF66FB /* CAPSPageMenu.swift in Sources */,
@@ -731,6 +762,7 @@
 				4A95D0461F0B709D00127F38 /* AlamoFireViewController.swift in Sources */,
 				4A29A9301F20BD89003E85F9 /* TableViewCell.swift in Sources */,
 				4A48119D1EE949A800AAE9A7 /* CollectionViewCell.swift in Sources */,
+				4A3D6E911F2740930068139F /* QRCodeGeneratorViewController.swift in Sources */,
 				4A2966531EFBB5AC00EF66FB /* CAPSPageMenuConfiguration.swift in Sources */,
 				4A3BF1361EF2875E003E45F5 /* DataReceiveViewController.swift in Sources */,
 				4A2966381EFB8DC100EF66FB /* PageMenuController.swift in Sources */,
