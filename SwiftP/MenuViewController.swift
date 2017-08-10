@@ -16,6 +16,7 @@ class MenuViewController: RootViewController {
         super.viewDidLoad()
         
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
+//        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
 

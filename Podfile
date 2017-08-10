@@ -19,5 +19,7 @@ target 'SwiftP' do
  pod 'SwiftyJSON'
  pod 'AFNetworking'
  pod 'SDWebImage'
-
+ pod 'Firebase/Core'
+ pod 'Firebase/Auth'
+ 
 end

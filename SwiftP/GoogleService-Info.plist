@@ -2,27 +2,39 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>232661207175-19s0gkvgac5aptioi4bbks82c74rp78m.apps.googleusercontent.com</string>
+	<string>601439254217-1d01slhp5i66skb4grnhbeu1au7jb1vd.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.232661207175-19s0gkvgac5aptioi4bbks82c74rp78m</string>
+	<string>com.googleusercontent.apps.601439254217-1d01slhp5i66skb4grnhbeu1au7jb1vd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDY7A_GvHmKoZD0XKOzJ7ZcqCYUsKqNsBk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>601439254217</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.test.SwiftP</string>
+	<string>com.sc.Swift</string>
 	<key>PROJECT_ID</key>
-	<string>swiftp-171513</string>
+	<string>swuftp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>swuftp.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
 	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
 	<false/>
 	<key>IS_GCM_ENABLED</key>
-	<false/>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:232661207175:ios:e1dbb906a124f544</string>
+	<string>1:601439254217:ios:cea4367bc96abe49</string>
+	<key>DATABASE_URL</key>
+	<string>https://swuftp.firebaseio.com</string>
 </dict>
 </plist>

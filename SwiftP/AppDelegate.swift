@@ -14,6 +14,7 @@ import FacebookLogin
 import FBSDKLoginKit
 import UserNotifications
 import AudioToolbox
+import Firebase
 
 @UIApplicationMain
 
@@ -29,6 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         self.fnForRegisterRemoteNotification()
         //For IQKeyboardManager
         IQKeyboardManager.sharedManager().enable = true
+        
+        //Firebase configuration
+        FIRApp.configure()
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         

@@ -17,7 +17,6 @@ class NSUrlSessionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func getAction(_ sender: Any) {
@@ -39,7 +38,6 @@ class NSUrlSessionViewController: UIViewController {
                 }
             }
             }.resume()
-        
     }
     @IBAction func postAction(_ sender: Any) {
         let Url = String(format: "%@%@", BASE_URL, SERVICE_NAME_URL)

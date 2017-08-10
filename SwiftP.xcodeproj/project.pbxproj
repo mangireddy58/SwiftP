@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A0520AB1EFCD7BA004EEC95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A0520AA1EFCD7BA004EEC95 /* GoogleService-Info.plist */; };
+		4A06106A1F3C645B0065C828 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A0610691F3C645B0065C828 /* GoogleService-Info.plist */; };
+		4A06106F1F3C65DF0065C828 /* FireBaseLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06106E1F3C65DF0065C828 /* FireBaseLoginVC.swift */; };
+		4A0610711F3C66050065C828 /* FireBaseRegVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0610701F3C66050065C828 /* FireBaseRegVC.swift */; };
+		4A0610741F3C7B160065C828 /* FireBaseSignOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0610731F3C7B160065C828 /* FireBaseSignOutVC.swift */; };
 		4A0EF6AC1EEA8088009E87AE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0EF6AB1EEA8088009E87AE /* RegisterViewController.swift */; };
 		4A1F39351EEE8BC5002C2AC8 /* ScroolingImagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1F39341EEE8BC5002C2AC8 /* ScroolingImagesController.swift */; };
 		4A2966381EFB8DC100EF66FB /* PageMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2966371EFB8DC100EF66FB /* PageMenuController.swift */; };
@@ -85,7 +88,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A0520AA1EFCD7BA004EEC95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A0610691F3C645B0065C828 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A06106E1F3C65DF0065C828 /* FireBaseLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseLoginVC.swift; sourceTree = "<group>"; };
+		4A0610701F3C66050065C828 /* FireBaseRegVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseRegVC.swift; sourceTree = "<group>"; };
+		4A0610731F3C7B160065C828 /* FireBaseSignOutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseSignOutVC.swift; sourceTree = "<group>"; };
 		4A0EF6AB1EEA8088009E87AE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		4A1F39341EEE8BC5002C2AC8 /* ScroolingImagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScroolingImagesController.swift; sourceTree = "<group>"; };
 		4A2966371EFB8DC100EF66FB /* PageMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuController.swift; sourceTree = "<group>"; };
@@ -195,6 +201,40 @@
 				B425C876F7A1188331BB803E /* Pods-SwiftP.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4A06106B1F3C656A0065C828 /* FireBaseLogin */ = {
+			isa = PBXGroup;
+			children = (
+				4A0610721F3C7AF60065C828 /* SignOutVC */,
+				4A06106D1F3C65860065C828 /* SignUp */,
+				4A06106C1F3C657D0065C828 /* SignIn */,
+			);
+			name = FireBaseLogin;
+			sourceTree = "<group>";
+		};
+		4A06106C1F3C657D0065C828 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				4A06106E1F3C65DF0065C828 /* FireBaseLoginVC.swift */,
+			);
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		4A06106D1F3C65860065C828 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				4A0610701F3C66050065C828 /* FireBaseRegVC.swift */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		4A0610721F3C7AF60065C828 /* SignOutVC */ = {
+			isa = PBXGroup;
+			children = (
+				4A0610731F3C7B160065C828 /* FireBaseSignOutVC.swift */,
+			);
+			name = SignOutVC;
 			sourceTree = "<group>";
 		};
 		4A0EF6AA1EEA806F009E87AE /* Register */ = {
@@ -488,9 +528,9 @@
 				4A80F6A61F0FA6DD009A3926 /* Models */,
 				4AFA4AA81EE7CA6600B0E972 /* Main.storyboard */,
 				4A61909B1F0271FC00479861 /* SwiftP-Bridging-Header.h */,
+				4A0610691F3C645B0065C828 /* GoogleService-Info.plist */,
 				4AFA4AAB1EE7CA6700B0E972 /* Assets.xcassets */,
 				4AFA4AAD1EE7CA6700B0E972 /* LaunchScreen.storyboard */,
-				4A0520AA1EFCD7BA004EEC95 /* GoogleService-Info.plist */,
 				4AFA4AB01EE7CA6700B0E972 /* Info.plist */,
 			);
 			path = SwiftP;
@@ -499,6 +539,7 @@
 		4AFA4AB61EE7CAAD00B0E972 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4A06106B1F3C656A0065C828 /* FireBaseLogin */,
 				4A3D6E8F1F2740720068139F /* QRCodeGenerator */,
 				4AF882EA1F25C21400DFBF67 /* NSUrlsession */,
 				4A29A92C1F20BCD3003E85F9 /* DownloadingJsonData */,
@@ -679,9 +720,9 @@
 				4A4811A41EE94C6500AAE9A7 /* 3.jpg in Resources */,
 				4A43224C1EF7E45600B0D767 /* 1.png in Resources */,
 				4A3D6E8E1F2726CF0068139F /* Feature.xib in Resources */,
+				4A06106A1F3C645B0065C828 /* GoogleService-Info.plist in Resources */,
 				4A5B76BE1F1F6AE60044FBE7 /* RightCustomCell.xib in Resources */,
 				4A5B76D11F1F72B00044FBE7 /* HeaderView.xib in Resources */,
-				4A0520AB1EFCD7BA004EEC95 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,6 +786,7 @@
 				4A2966521EFBB5AC00EF66FB /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */,
 				4A3D6E8D1F2726CF0068139F /* FeatureView.swift in Sources */,
 				4A2966541EFBB5AC00EF66FB /* MenuItemView.swift in Sources */,
+				4A0610741F3C7B160065C828 /* FireBaseSignOutVC.swift in Sources */,
 				4A6190A51F0288B400479861 /* MenuItemCell.swift in Sources */,
 				4A6190A01F02780200479861 /* MenuViewController.swift in Sources */,
 				4A529A001EFA355900C09EF2 /* ViewControllerAsPopUp.swift in Sources */,
@@ -757,6 +799,7 @@
 				4A1F39351EEE8BC5002C2AC8 /* ScroolingImagesController.swift in Sources */,
 				4A61909E1F02720000479861 /* SWRevealViewController.m in Sources */,
 				4A2966501EFBB5AC00EF66FB /* CAPSPageMenu+UIConfiguration.swift in Sources */,
+				4A06106F1F3C65DF0065C828 /* FireBaseLoginVC.swift in Sources */,
 				4A0EF6AC1EEA8088009E87AE /* RegisterViewController.swift in Sources */,
 				4AFA4AC01EE7DC3B00B0E972 /* LoginViewController.swift in Sources */,
 				4A95D0461F0B709D00127F38 /* AlamoFireViewController.swift in Sources */,
@@ -777,6 +820,7 @@
 				4A5B76D01F1F72B00044FBE7 /* HeaderView.swift in Sources */,
 				4A5B76D81F1F82520044FBE7 /* BlurViewController.swift in Sources */,
 				4AFA4AB81EE7CACC00B0E972 /* MainViewController.swift in Sources */,
+				4A0610711F3C66050065C828 /* FireBaseRegVC.swift in Sources */,
 				4A48119A1EE9493700AAE9A7 /* CollectionViewController.swift in Sources */,
 				4A5299FD1EFA34F900C09EF2 /* PopUpViewController.swift in Sources */,
 				4A33FDE61EF1331F00F89138 /* CollectionDemoCell.swift in Sources */,
@@ -924,7 +968,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sc.torq;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sc.Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftP/SwiftP-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
@@ -949,7 +993,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sc.torq;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sc.Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftP/SwiftP-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";

@@ -61,7 +61,7 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     }
     // Login ViewController
     func fnForLoginViewController() {
-        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "QRCodeGeneratorViewController") as! QRCodeGeneratorViewController
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "FireBaseRegVC") as! FireBaseRegVC
         self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     //MARK:- Valid EmailId
@@ -71,6 +71,21 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         let result = emailTest.evaluate(with: inputText)
         return result
+    }
+    //MARK:- Firebase Login
+    func fnForFireBaseLoginVC () {
+        let firebaseLogin = storyBoard.instantiateViewController(withIdentifier: "FireBaseLoginVC") as! FireBaseLoginVC
+        self.navigationController?.pushViewController(firebaseLogin, animated: true)
+    }
+    //MARK:- Firebase Register
+    func fnForFireBaseRegVC () {
+        let firebaseReg = storyBoard.instantiateViewController(withIdentifier: "FireBaseRegVC") as! FireBaseRegVC
+        self.navigationController?.pushViewController(firebaseReg, animated: true)
+    }
+    //MARK:- Firebase SignOut
+    func fnForFireBaseSignOutVC () {
+        let firebaseSignOut = storyBoard.instantiateViewController(withIdentifier: "FireBaseSignOutVC") as! FireBaseSignOutVC
+        self.navigationController?.pushViewController(firebaseSignOut, animated: true)
     }
     //MARK:- Show General Alert
     func showGeneralAlert(message: String) -> Void {
@@ -97,11 +112,11 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     }
     
     //MARK:- MENU BUTTTON ACTION
-    @IBAction func menuBtnAction(_ sender: UIButton) {
-        menuBtnAction.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        
-    }
+//    @IBAction func menuBtnAction(_ sender: UIButton) {
+//        menuBtnAction.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
+//        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+//        
+//    }
     //MARK:- AddProgressBar
     func addProgressIndicator() {
         mViewLoading = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
@@ -190,11 +205,6 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     }
 
     
-    
-    
-    
-    
-    
-    
+  
     
 }
