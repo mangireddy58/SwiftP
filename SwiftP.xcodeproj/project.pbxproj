@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A03A1811F3DA958002E96D8 /* ImageUploading+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03A1801F3DA958002E96D8 /* ImageUploading+Extension.swift */; };
+		4A03A1831F3DAACD002E96D8 /* ImageUploadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03A1821F3DAACD002E96D8 /* ImageUploadingViewController.swift */; };
 		4A06106A1F3C645B0065C828 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A0610691F3C645B0065C828 /* GoogleService-Info.plist */; };
 		4A06106F1F3C65DF0065C828 /* FireBaseLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06106E1F3C65DF0065C828 /* FireBaseLoginVC.swift */; };
 		4A0610711F3C66050065C828 /* FireBaseRegVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0610701F3C66050065C828 /* FireBaseRegVC.swift */; };
@@ -88,6 +90,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A03A1801F3DA958002E96D8 /* ImageUploading+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageUploading+Extension.swift"; sourceTree = "<group>"; };
+		4A03A1821F3DAACD002E96D8 /* ImageUploadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUploadingViewController.swift; sourceTree = "<group>"; };
 		4A0610691F3C645B0065C828 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4A06106E1F3C65DF0065C828 /* FireBaseLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseLoginVC.swift; sourceTree = "<group>"; };
 		4A0610701F3C66050065C828 /* FireBaseRegVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseRegVC.swift; sourceTree = "<group>"; };
@@ -203,6 +207,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4A03A17F1F3DA92F002E96D8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A03A1801F3DA958002E96D8 /* ImageUploading+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		4A06106B1F3C656A0065C828 /* FireBaseLogin */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +247,14 @@
 				4A0610731F3C7B160065C828 /* FireBaseSignOutVC.swift */,
 			);
 			name = SignOutVC;
+			sourceTree = "<group>";
+		};
+		4A0610751F3C96070065C828 /* Firebase Image Uploading */ = {
+			isa = PBXGroup;
+			children = (
+				4A03A1821F3DAACD002E96D8 /* ImageUploadingViewController.swift */,
+			);
+			name = "Firebase Image Uploading";
 			sourceTree = "<group>";
 		};
 		4A0EF6AA1EEA806F009E87AE /* Register */ = {
@@ -539,6 +559,8 @@
 		4AFA4AB61EE7CAAD00B0E972 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4A03A17F1F3DA92F002E96D8 /* Extensions */,
+				4A0610751F3C96070065C828 /* Firebase Image Uploading */,
 				4A06106B1F3C656A0065C828 /* FireBaseLogin */,
 				4A3D6E8F1F2740720068139F /* QRCodeGenerator */,
 				4AF882EA1F25C21400DFBF67 /* NSUrlsession */,
@@ -787,9 +809,11 @@
 				4A3D6E8D1F2726CF0068139F /* FeatureView.swift in Sources */,
 				4A2966541EFBB5AC00EF66FB /* MenuItemView.swift in Sources */,
 				4A0610741F3C7B160065C828 /* FireBaseSignOutVC.swift in Sources */,
+				4A03A1831F3DAACD002E96D8 /* ImageUploadingViewController.swift in Sources */,
 				4A6190A51F0288B400479861 /* MenuItemCell.swift in Sources */,
 				4A6190A01F02780200479861 /* MenuViewController.swift in Sources */,
 				4A529A001EFA355900C09EF2 /* ViewControllerAsPopUp.swift in Sources */,
+				4A03A1811F3DA958002E96D8 /* ImageUploading+Extension.swift in Sources */,
 				4A3D6E8A1F2726AB0068139F /* ScrollingImagesWithXib.swift in Sources */,
 				4A5B76BD1F1F6AE50044FBE7 /* RightCustomCell.swift in Sources */,
 				4A29A92A1F208E2D003E85F9 /* DynamicCell2.swift in Sources */,

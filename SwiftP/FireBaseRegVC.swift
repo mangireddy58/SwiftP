@@ -14,6 +14,7 @@ class FireBaseRegVC: RootViewController, UITextFieldDelegate {
     @IBOutlet weak var userNameTxtFld: UITextField!
     @IBOutlet weak var emailIdTxtFld: UITextField!
     @IBOutlet weak var passwordTxtFld: UITextField!
+    @IBOutlet weak var userImageView: UIImageView!
     
     
     override func viewDidLoad() {

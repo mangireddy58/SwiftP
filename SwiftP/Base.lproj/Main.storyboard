@@ -1546,6 +1546,33 @@
             </objects>
             <point key="canvasLocation" x="-3261" y="-124"/>
         </scene>
+        <!--Image Uploading View Controller-->
+        <scene sceneID="GgU-QH-TaI">
+            <objects>
+                <viewController storyboardIdentifier="ImageUploadingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fPD-ig-Krv" customClass="ImageUploadingViewController" customModule="SwiftP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eEs-9E-9bl"/>
+                        <viewControllerLayoutGuide type="bottom" id="4uR-s1-RzD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dmx-6T-Edd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lza-ra-hT5">
+                                <rect key="frame" x="110" y="45" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="userImageView" destination="Lza-ra-hT5" id="oJd-vb-TRG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EP7-9u-NVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6104" y="-163"/>
+        </scene>
         <!--Detail View Controller-->
         <scene sceneID="Hts-Cr-MHX">
             <objects>
@@ -1729,7 +1756,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Emailid" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="blA-6z-hPS">
-                                <rect key="frame" x="16" y="207" width="288" height="30"/>
+                                <rect key="frame" x="16" y="288" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1739,7 +1766,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O6v-1Y-WXS">
-                                <rect key="frame" x="16" y="257" width="288" height="30"/>
+                                <rect key="frame" x="16" y="338" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1749,7 +1776,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATv-fZ-Cop">
-                                <rect key="frame" x="99" y="322" width="123" height="30"/>
+                                <rect key="frame" x="99" y="403" width="123" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SignUpTapped"/>
                                 <connections>
@@ -1757,7 +1784,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uh7-xt-5w2">
-                                <rect key="frame" x="16" y="155" width="288" height="30"/>
+                                <rect key="frame" x="16" y="236" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1767,19 +1794,24 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gI7-1N-EOr">
-                                <rect key="frame" x="99" y="378" width="123" height="30"/>
+                                <rect key="frame" x="99" y="459" width="123" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Goto Login"/>
                                 <connections>
                                     <action selector="gotoLoginVC:" destination="np8-TY-fPC" eventType="touchUpInside" id="tN8-jB-aG5"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VOl-6D-ksH">
+                                <rect key="frame" x="100" y="96" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="emailIdTxtFld" destination="blA-6z-hPS" id="82e-3K-7cb"/>
                         <outlet property="passwordTxtFld" destination="O6v-1Y-WXS" id="OWm-zW-iaw"/>
+                        <outlet property="userImageView" destination="VOl-6D-ksH" id="2n0-Ge-JYh"/>
                         <outlet property="userNameTxtFld" destination="uh7-xt-5w2" id="HuE-np-P5v"/>
                     </connections>
                 </viewController>

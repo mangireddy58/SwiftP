@@ -61,7 +61,7 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     }
     // Login ViewController
     func fnForLoginViewController() {
-        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "FireBaseRegVC") as! FireBaseRegVC
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "ImageUploadingViewController") as! ImageUploadingViewController
         self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     //MARK:- Valid EmailId
@@ -87,6 +87,7 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let firebaseSignOut = storyBoard.instantiateViewController(withIdentifier: "FireBaseSignOutVC") as! FireBaseSignOutVC
         self.navigationController?.pushViewController(firebaseSignOut, animated: true)
     }
+    
     //MARK:- Show General Alert
     func showGeneralAlert(message: String) -> Void {
        let alertview = JSSAlertView().show(self,title: "",
