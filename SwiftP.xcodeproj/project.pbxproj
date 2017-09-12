@@ -71,6 +71,8 @@
 		4A79619E1F0A584000D4B3BE /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A79619C1F0A584000D4B3BE /* UserNotifications.framework */; };
 		4A79619F1F0A584000D4B3BE /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A79619D1F0A584000D4B3BE /* UserNotificationsUI.framework */; };
 		4A7961A11F0A61A100D4B3BE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7961A01F0A61A100D4B3BE /* AudioToolbox.framework */; };
+		4A7B44C11F67E0AB00F8A57A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B44C01F67E0AB00F8A57A /* Reachability.swift */; };
+		4A7B44C71F67E20300F8A57A /* RechabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B44C61F67E20300F8A57A /* RechabilityViewController.swift */; };
 		4A95D0461F0B709D00127F38 /* AlamoFireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A95D0451F0B709D00127F38 /* AlamoFireViewController.swift */; };
 		4AD941401F04C908003F9ADC /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9413F1F04C908003F9ADC /* EmailViewController.swift */; };
 		4AD941431F04C945003F9ADC /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD941411F04C945003F9ADC /* Messages.framework */; };
@@ -159,6 +161,8 @@
 		4A79619C1F0A584000D4B3BE /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		4A79619D1F0A584000D4B3BE /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		4A7961A01F0A61A100D4B3BE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4A7B44C01F67E0AB00F8A57A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4A7B44C61F67E20300F8A57A /* RechabilityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RechabilityViewController.swift; sourceTree = "<group>"; };
 		4A95D0451F0B709D00127F38 /* AlamoFireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamoFireViewController.swift; sourceTree = "<group>"; };
 		4AD9413F1F04C908003F9ADC /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		4AD941411F04C945003F9ADC /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
@@ -460,6 +464,15 @@
 			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
+		4A7B44C21F67E10100F8A57A /* Rechability */ = {
+			isa = PBXGroup;
+			children = (
+				4A7B44C61F67E20300F8A57A /* RechabilityViewController.swift */,
+				4A7B44C01F67E0AB00F8A57A /* Reachability.swift */,
+			);
+			name = Rechability;
+			sourceTree = "<group>";
+		};
 		4A80F6A61F0FA6DD009A3926 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -559,6 +572,7 @@
 		4AFA4AB61EE7CAAD00B0E972 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4A7B44C21F67E10100F8A57A /* Rechability */,
 				4A03A17F1F3DA92F002E96D8 /* Extensions */,
 				4A0610751F3C96070065C828 /* Firebase Image Uploading */,
 				4A06106B1F3C656A0065C828 /* FireBaseLogin */,
@@ -821,6 +835,7 @@
 				4A3BF1341EF2873D003E45F5 /* DataPassingViewController.swift in Sources */,
 				4AF882F11F26073200DFBF67 /* NSUrlSessionViewController.swift in Sources */,
 				4A1F39351EEE8BC5002C2AC8 /* ScroolingImagesController.swift in Sources */,
+				4A7B44C11F67E0AB00F8A57A /* Reachability.swift in Sources */,
 				4A61909E1F02720000479861 /* SWRevealViewController.m in Sources */,
 				4A2966501EFBB5AC00EF66FB /* CAPSPageMenu+UIConfiguration.swift in Sources */,
 				4A06106F1F3C65DF0065C828 /* FireBaseLoginVC.swift in Sources */,
@@ -843,6 +858,7 @@
 				4A29A92E1F20BD46003E85F9 /* DownloadJsonViewController.swift in Sources */,
 				4A5B76D01F1F72B00044FBE7 /* HeaderView.swift in Sources */,
 				4A5B76D81F1F82520044FBE7 /* BlurViewController.swift in Sources */,
+				4A7B44C71F67E20300F8A57A /* RechabilityViewController.swift in Sources */,
 				4AFA4AB81EE7CACC00B0E972 /* MainViewController.swift in Sources */,
 				4A0610711F3C66050065C828 /* FireBaseRegVC.swift in Sources */,
 				4A48119A1EE9493700AAE9A7 /* CollectionViewController.swift in Sources */,

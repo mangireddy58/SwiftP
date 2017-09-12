@@ -8,14 +8,14 @@ target 'SwiftP' do
  pod 'Google/SignIn'
  pod 'FacebookCore'
  pod 'FacebookLogin'
- pod 'SDWebImage', '~>3.8'
+# pod 'SDWebImage', '~>3.8'
  pod 'ImageSlideshow/SDWebImage'
  pod 'SCLAlertView'
  pod 'RMUniversalAlert'
  pod 'XLActionController'
  pod 'JSSAlertView'
  pod 'PageMenu'
- pod 'Alamofire', '~>4.4'
+ pod 'Alamofire'
  pod 'SwiftyJSON'
  pod 'AFNetworking'
  pod 'SDWebImage'
@@ -23,5 +23,6 @@ target 'SwiftP' do
  pod 'Firebase/Auth'
  pod 'Firebase/Database'
  pod 'Firebase/Storage'
+ pod ''ReachabilitySwift''
  
 end

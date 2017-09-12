@@ -19,13 +19,15 @@ class CollectionDemoController: RootViewController, UICollectionViewDataSource, 
         parseData()
         collectionDemoView.dataSource = self
         collectionDemoView.delegate = self
-        self.addProgressIndicator()
-        self.hideProgressIndicator()
+        collectionDemoView.reloadData()
+        
+//        self.addProgressIndicator()
+//        self.hideProgressIndicator()
     }
     func parseData() {
         self.showProgressIndicator()
         //Post
-        let configuration = URLSessionConfiguration .default
+/*      let configuration = URLSessionConfiguration .default
         let session = URLSession(configuration: configuration)
         
         let params = "{\"CopropietarioID\":71497}"
@@ -42,12 +44,11 @@ class CollectionDemoController: RootViewController, UICollectionViewDataSource, 
         
         let dataTask = session.dataTask(with: request as URLRequest) {data,response,error in
             let httpResponse = response as? HTTPURLResponse
-            
             if (error != nil) {
                 print(error!)
             } else {
                 if let responseJSON = (try? JSONSerialization.jsonObject(with: data!, options: [])) as? [String:AnyObject]{
-//                    print("json response is \(responseJSON)")
+                    print("json response is \(responseJSON)")
                     let pendingArray = responseJSON["listaNotification"] as? NSArray
                     print("pendingArray\(String(describing: pendingArray))")
 
@@ -68,44 +69,45 @@ class CollectionDemoController: RootViewController, UICollectionViewDataSource, 
             }
             
         }
-        dataTask.resume()
+        dataTask.resume()*/
         
         
         
-        //Get
-        //        let url = "https://restcountries.eu/rest/v1/all"
-        //        var request = URLRequest(url: URL(string: url)!)
-        //        request.httpMethod = "GET"
-        //        let configuration = URLSessionConfiguration.default
-        //        let session = URLSession(configuration: configuration, delegate: nil, delegateQueue: OperationQueue.main)
-        //        let task = session.dataTask(with: request) {(data , response, error) in
-        //
-        //            if(error != nil){
-        //                print("Error")
-        //            }
-        //            else {
-        //                do {
-        //                    self.responseArray = NSMutableArray(array:try JSONSerialization.jsonObject(with: data!, options: .mutableLeaves) as! NSArray)
+//        Get
+                let url = "https://restcountries.eu/rest/v1/all"
+                var request = URLRequest(url: URL(string: url)!)
+                request.httpMethod = "GET"
+                let configuration = URLSessionConfiguration.default
+                let session = URLSession(configuration: configuration, delegate: nil, delegateQueue: OperationQueue.main)
+                let task = session.dataTask(with: request) {(data , response, error) in
+        
+                    if(error != nil){
+                        print("Error")
+                    }
+                    else {
+                        do {
+                            self.responseArray = NSMutableArray(array:try JSONSerialization.jsonObject(with: data!, options: .mutableLeaves) as! NSArray)
+                            print(self.responseArray)
+                            self.collectionDemoView.reloadData()
+        //                    self.responseArray = fetchedDataArray .value(forKey: "name") as! NSArray
         //                    print(self.responseArray)
-        ////                    self.responseArray = fetchedDataArray .value(forKey: "name") as! NSArray
-        ////                    print(self.responseArray)
-        ////                    for eachFetchedCountry in fetchedDataArray {
-        ////                        let eachCountry = eachFetchedCountry as! [String: Any]
-        //////                        print(eachCountry)
-        ////                        let countryNameArray = eachCountry["name"] as! NSMutableArray
-        ////                        let capitalNameArray = eachCountry["capital"] as! NSMutableArray
-        ////                        print(countryNameArray, capitalNameArray)
-        ////
-        ////                    }//for ending
-        //                    self.collectionDemoView.reloadData()
-        //                    self.hideProgressIndicator()
-        //                }
-        //                catch {
-        //                    print("Error 2")
-        //                }
-        //            }
-        //        }
-        //        task.resume()
+        //                    for eachFetchedCountry in fetchedDataArray {
+        //                        let eachCountry = eachFetchedCountry as! [String: Any]
+        ////                        print(eachCountry)
+        //                        let countryNameArray = eachCountry["name"] as! NSMutableArray
+        //                        let capitalNameArray = eachCountry["capital"] as! NSMutableArray
+        //                        print(countryNameArray, capitalNameArray)
+        //
+        //                    }//for ending
+                            self.collectionDemoView.reloadData()
+                            self.hideProgressIndicator()
+                        }
+                        catch {
+                            print("Error 2")
+                        }
+                    }
+                }
+                task.resume()
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

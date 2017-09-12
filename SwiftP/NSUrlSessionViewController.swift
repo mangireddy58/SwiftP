@@ -69,5 +69,40 @@ class NSUrlSessionViewController: UIViewController {
         
         
     }
+    
+    @IBAction func NSurlSession(_sender:Any) {
+        let myUrl = NSURL(string:"")
+        let request = NSMutableURLRequest(url: myUrl! as URL)
+        request.httpMethod = "POST"
+        let postString = ""
+        request.httpBody = postString.data(using: String.Encoding.utf8)
+        let task = URLSession.shared.dataTask(with: request as URLRequest){data,response,error in
+            if error != nil {
+                print(error!)
+                return
+            }
+            print("response = \(String(describing: response))")
+            
+            let responseString = NSString(data:data!, encoding:String.Encoding.utf8.rawValue)
+            print(responseString!)
+            guard let httpBody = try? JSONSerialization.data(withJSONObject: responseString, options: []) else {
+                return
+            }
+            
+            
+            
+            
+        }
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
 
 }

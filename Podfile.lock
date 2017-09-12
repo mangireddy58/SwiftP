@@ -116,7 +116,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - Alamofire (~> 4.4)
+  - Alamofire
   - FacebookCore
   - FacebookLogin
   - Firebase/Auth
@@ -131,7 +131,6 @@ DEPENDENCIES:
   - RMUniversalAlert
   - SCLAlertView
   - SDWebImage
-  - SDWebImage (~> 3.8)
   - SwiftyJSON
   - XLActionController
 
@@ -168,6 +167,6 @@ SPEC CHECKSUMS:
   UIAlertView+Blocks: a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
   XLActionController: 57fe0ce1642e2eed971b188b490762345fdbf963
 
-PODFILE CHECKSUM: c8011b3d5d8210302327d70a89c8d0d0c6a73ac0
+PODFILE CHECKSUM: b866c31f42715a82bf97b09eff83e819b049cb9a
 
 COCOAPODS: 1.2.1

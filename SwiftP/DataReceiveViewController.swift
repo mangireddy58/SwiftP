@@ -29,7 +29,7 @@ class DataReceiveViewController: UIViewController {
         fullNameLbl.text = fullNameStr as String*/
         /*Data receiving as UserDefaults*/
         
-        /* Data Receiving as UserDefaults
+        /* Data Receiving in UserDefaults
         let userDeafults = UserDefaults.standard
         firstNameLbl.text = userDeafults.string(forKey: "FirstName")
         lastNameLbl.text = userDeafults.string(forKey: "LastName")

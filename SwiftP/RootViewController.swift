@@ -13,7 +13,7 @@ import JSSAlertView
 import Alamofire
 import SwiftyJSON
 
-let BASE_URL =  "http://bunker360v3.cloudapp.net/JsonService.svc/GetListaNotifications"
+let BASE_URL =  "http://52.74.159.201:9090/Torq/login" //"http://bunker360v3.cloudapp.net/JsonService.svc/GetListaNotifications"
 let LOGIN_SERVICE_NAME = "login"
 let LOGIN_PARAMETERS = "{\"user\": {\"email\": \"%@\",\"password\": \"%@\"},\"userPersonalDetails\": {\"iosId\":\"%@\"}}"
 
@@ -61,7 +61,7 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     }
     // Login ViewController
     func fnForLoginViewController() {
-        let secondViewController = storyBoard.instantiateViewController(withIdentifier: "ImageUploadingViewController") as! ImageUploadingViewController
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier:"RechabilityViewController") as! RechabilityViewController
         self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     //MARK:- Valid EmailId

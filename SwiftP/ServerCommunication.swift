@@ -76,13 +76,5 @@ class ServerCommunication: NSObject {
     
     //MARK:- Normal Json Parsing
     
-    
-    
-    
-    
-    
-    
-    
-    
 }
 
