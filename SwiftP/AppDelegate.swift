@@ -97,8 +97,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
             return FBSDKApplicationDelegate.sharedInstance().application(application, open: url as URL!, sourceApplication: sourceApplication, annotation: annotation)
         }*/
     let checkFB = FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
-        let checkGoogle = GIDSignIn.sharedInstance().handle(url as URL!,sourceApplication: sourceApplication,annotation: annotation)
-        return checkGoogle || checkFB
+    let checkGoogle = GIDSignIn.sharedInstance().handle(url as URL!,sourceApplication: sourceApplication,annotation: annotation)
+    //let checkLinkedIn = LISDKCallbackHandler.application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+        
+        return checkGoogle || checkFB //|| checkLinkedIn
     }
     //MARK:- AppDelgate Method
     func mAppDelegate() -> AppDelegate{
@@ -148,7 +150,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         if application.applicationState == UIApplicationState.active {
             print("Active")
             AudioServicesPlaySystemSound(1002)
-//            self .setBadgeCounter(count: <#T##NSInteger#>)
         }
         else if application.applicationState == UIApplicationState.background {
             print("Background")

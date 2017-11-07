@@ -83,6 +83,7 @@ class RegisterViewController: RootViewController, GIDSignInDelegate, GIDSignInUI
                                     self.dict = result as! [String : AnyObject]
                                     print(result!)
                                     print(self.dict)
+                                    
                                 }
                             })
                         }   

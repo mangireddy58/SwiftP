@@ -61,7 +61,7 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     }
     // Login ViewController
     func fnForLoginViewController() {
-        let secondViewController = storyBoard.instantiateViewController(withIdentifier:"RechabilityViewController") as! RechabilityViewController
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier:"DynamicTextViewController") as! DynamicTextViewController
         self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     //MARK:- Valid EmailId
@@ -204,7 +204,9 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         mViewLoading?.isHidden = true;
         self.view.isUserInteractionEnabled = true;
     }
-
+    // PunchApp
+//    static let dev_Base_Url = "http://54.169.243.5:8080/MASService.svc"
+//    static let prod_Base_Url = "http://54.169.243.5/MASService.svc"
     
   
     

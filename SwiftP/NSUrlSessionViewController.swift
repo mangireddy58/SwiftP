@@ -8,11 +8,17 @@
 
 import UIKit
 
+let NOTIFICATION_PARAMS = "{\"Email\":\"%@\",\"Password\":\"%@\",\"IMEI\":\"%@\"}"
+let BASE_URL = "http://54.169.243.5/MASService.svc/"
+let NOTIFICATION_URL = "AuthenticateEmployee"
+
 class NSUrlSessionViewController: UIViewController {
 
     var BASE_URL = "https://jsonplaceholder.typicode.com/"
     var SERVICE_NAME_URL = "posts"
     var LOGIN_PARAMETERS1 = "{\"username\": \"%@\",\"tweet\": \"%@\"}"
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,32 +75,46 @@ class NSUrlSessionViewController: UIViewController {
         
         
     }
-    
+    // Working code
     @IBAction func NSurlSession(_sender:Any) {
-        let myUrl = NSURL(string:"")
-        let request = NSMutableURLRequest(url: myUrl! as URL)
+        let deviceUdid = UIDevice.current.identifierForVendor!.uuidString
+        let urlStr = String(format: "%@%@",BASE_URL, NOTIFICATION_URL)
+        let jsonString = String(format:NOTIFICATION_PARAMS, emailTxtFld.text!, passwordTxtFld.text!,deviceUdid )
+        print("\(urlStr)\(jsonString)")
+        let jsonData = jsonString.data(using:.utf8)
+        var request = URLRequest(url: URL(string: urlStr)!)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
         request.httpMethod = "POST"
-        let postString = ""
-        request.httpBody = postString.data(using: String.Encoding.utf8)
-        let task = URLSession.shared.dataTask(with: request as URLRequest){data,response,error in
-            if error != nil {
-                print(error!)
-                return
+        request.httpBody = jsonData
+        let configuration = URLSessionConfiguration.default
+        let session = URLSession(configuration: configuration, delegate: nil, delegateQueue: OperationQueue.main)
+        let task = session.dataTask(with: request) {(data , response, error) in
+            if(error != nil){
+                print("Error \(String(describing: error))")
             }
-            print("response = \(String(describing: response))")
-            
-            let responseString = NSString(data:data!, encoding:String.Encoding.utf8.rawValue)
-            print(responseString!)
-            guard let httpBody = try? JSONSerialization.data(withJSONObject: responseString, options: []) else {
-                return
+            else {
+                do {
+                    let fetchedDataDictionary = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary
+                    print(fetchedDataDictionary!)
+                    let message = fetchedDataDictionary?["ResponseMsg"] as! String
+                    if message == "Login not allowed. This device is not registered. Contact Admin." {
+                        print(message)
+                        //                        self.showUniversalAlert(title: "", message: message)
+                    }
+                    else {
+                        //                        self.dataArray = (fetchedDataDictionary?["data"] as! NSArray)
+                        //                        self.annoucementTableView.dataSource = self
+                        //                        self.annoucementTableView.delegate = self
+                        //                        self.annoucementTableView .reloadData()
+                    }
+                }
+                catch let error as NSError {
+                    print(error.debugDescription)
+                }
             }
-            
-            
-            
-            
         }
-        
-        
+        task.resume()
     }
     
     

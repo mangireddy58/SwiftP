@@ -15,6 +15,8 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Alamofire (4.4.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -96,6 +98,7 @@ PODS:
   - IQKeyboardManagerSwift (4.0.10)
   - JSSAlertView (3.0.4)
   - PageMenu (1.2.9)
+  - ReachabilitySwift (3)
   - RMUniversalAlert (0.8.1):
     - RMUniversalAlert/Core (= 0.8.1)
   - RMUniversalAlert/Core (0.8.1):
@@ -117,6 +120,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - Alamofire
+  - AlamofireImage
   - FacebookCore
   - FacebookLogin
   - Firebase/Auth
@@ -128,6 +132,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - JSSAlertView
   - PageMenu
+  - ReachabilitySwift
   - RMUniversalAlert
   - SCLAlertView
   - SDWebImage
@@ -137,6 +142,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
   FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
@@ -158,6 +164,7 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
   JSSAlertView: 7d8345c88e6fd8b515bc49f0fc8d8c69f6776b9c
   PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
   RMUniversalAlert: ce7118101a19fa41b9adedf907b66a8cc3bd32c8
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
@@ -167,6 +174,6 @@ SPEC CHECKSUMS:
   UIAlertView+Blocks: a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
   XLActionController: 57fe0ce1642e2eed971b188b490762345fdbf963
 
-PODFILE CHECKSUM: b866c31f42715a82bf97b09eff83e819b049cb9a
+PODFILE CHECKSUM: dfaa20693b1157457167fe3e25d04de032dd98a8
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1

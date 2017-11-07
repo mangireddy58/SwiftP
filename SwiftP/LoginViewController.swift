@@ -9,7 +9,7 @@
 import UIKit
 
 
-class LoginViewController: RootViewController, UITextFieldDelegate, ClassForServerCommDelegate {
+class LoginViewController: RootViewController, UITextFieldDelegate {
 var parentNavigationController : UINavigationController?
     @IBOutlet weak var userNameTxtFld: UITextField!
     @IBOutlet weak var passwordTxtFld: UITextField!
@@ -21,22 +21,24 @@ var parentNavigationController : UINavigationController?
     }
     
     @IBAction func submitAction(_ sender: Any) {
-        if userNameTxtFld.text == "" {
-            userNameTxtFld.becomeFirstResponder()
-        }
-        else if passwordTxtFld.text == "" {
-            passwordTxtFld.becomeFirstResponder()
-        }
-        else if !validEmailId(inputText: userNameTxtFld.text!)  {
-            print("Not Valid Emaild")
-        }
-        else {
-//            let loginParams:[String:Any] = String(format: LOGIN_PARAMETERS, self.userNameTxtFld.text!, self.passwordTxtFld.text!)
-            let deviceId = "wrwer34fr436tr4fgt54gtrtg56yhgtrhy65h65"
-            let loginParams = String(format: LOGIN_PARAMETERS, userNameTxtFld.text!, passwordTxtFld.text!, deviceId)
-            let serverCommObj = ServerCommunication()
-            serverCommObj.delegate = self
-            print("",loginParams)
+        fnForFireBaseRegVC()
+        
+//        if userNameTxtFld.text == "" {
+//            userNameTxtFld.becomeFirstResponder()
+//        }
+//        else if passwordTxtFld.text == "" {
+//            passwordTxtFld.becomeFirstResponder()
+//        }
+//        else if !validEmailId(inputText: userNameTxtFld.text!)  {
+//            print("Not Valid Emaild")
+//        }
+//        else {
+////            let loginParams:[String:Any] = String(format: LOGIN_PARAMETERS, self.userNameTxtFld.text!, self.passwordTxtFld.text!)
+//            let deviceId = "wrwer34fr436tr4fgt54gtrtg56yhgtrhy65h65"
+//            let loginParams = String(format: LOGIN_PARAMETERS, userNameTxtFld.text!, passwordTxtFld.text!, deviceId)
+//            let serverCommObj = ServerCommunication()
+//            serverCommObj.delegate = self
+//            print("",loginParams)
             //serverCommObj .sendPostParametersWithalamofire(parameterString: loginParams, serviceName: LOGIN_SERVICE_NAME)
             
         /*let url = "https://restcountries.eu/rest/v1/all"
@@ -66,7 +68,6 @@ var parentNavigationController : UINavigationController?
             task.resume()*/
             
         }
-    }
     func onServiceSuccess(responseDictionary: NSDictionary) {
         
     }

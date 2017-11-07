@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AlamofireImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -89,6 +94,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ReachabilitySwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SCLAlertView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -132,12 +142,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3448F7A47D22FDA85C467A029A40C221</key>
+		<key>1CB63C7242DB8351261940555C0D8A00</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3D06DC7490EB3C004623DFE525483F6E</key>
+		<key>2CE4B044C995BF95FC18462EFE5F33C8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -147,17 +157,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>44F4ECC4C2D7145CCB288B3FDD3256A7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>459F761F4B2B78433CD6DD25B025CA00</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>546219A9EA791ACBEA1AC373ECC65340</key>
+		<key>56FEBFECC7EA5B49D15DFFB527896803</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -177,22 +182,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6988498D69A6CEFA715A4BFFCB77FA18</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7335E9C9689F3B8A16F063A884748533</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>748D6F942CE2FCBF404F5C2E476BEC4A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7939222F54E4FEF2625B723CFF1C78ED</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8513F37D85AA5D7593B3C1653ECBA491</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -207,12 +207,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A7968A6988587B2D3D5F19056B7B2AB1</key>
+		<key>908C28889F932FFF7E8AF3906B8374EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B18830DADD914713B452110FA322B7E5</key>
+		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -242,7 +242,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>D74E77A845CF65CB425877F63D730243</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DDBCFDE490CDFDABF6F16A26F346932D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E35FD8A732409731C4B43E0870231645</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F51081104AC93AD2EB60015708669BF5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F514435E9358A397E56C77E36774DEAC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

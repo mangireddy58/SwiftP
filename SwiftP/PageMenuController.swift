@@ -92,10 +92,8 @@ class PageMenuController: RootViewController {
         
         // Initialize scroll menu
         pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect(x: 0.0, y: 0.0, width: self.contentView.frame.width, height: self.contentView.frame.height), pageMenuOptions: parameters)
-        
         self.addChildViewController(pageMenu!)
         self.contentView.addSubview(pageMenu!.view)
-        
         pageMenu!.didMove(toParentViewController: self)
         
     }

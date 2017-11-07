@@ -8,7 +8,9 @@
 
 import UIKit
 import Alamofire
+import AlamofireImage
 import SwiftyJSON
+
 
 class AlamoFireViewController: RootViewController {
 
@@ -72,7 +74,18 @@ class AlamoFireViewController: RootViewController {
 //        self.alamofire()
     }
     
-
+    // Downloading images using alamofire images
+    /*let imageView = UIImageView(frame: frame)
+    let url = URL(string: "https://httpbin.org/image/png")!
+    let placeholderImage = UIImage(named: "placeholder")!
+    
+    imageView.af_setImage(withURL: url, placeholderImage: placeholderImage)*/
+    
+    
+    
+    
+    
+    
 }
     
 

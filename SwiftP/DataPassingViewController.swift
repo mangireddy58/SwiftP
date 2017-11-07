@@ -38,6 +38,19 @@ class DataPassingViewController: UIViewController, UITextFieldDelegate {
         userDefaults.set(fullNameTxtFld.text, forKey: "FullName")
         userDefaults .synchronize()*/
         
+        /*
+         //Storing image in userDefaults encoding
+         let myImage = UIImage(named: "dog.png")
+        let myImageData:NSData = UIImagePNGRepresentation(myImage!) as NSData!
+        
+        // saving 
+        UserDefaults.standard.set(myImageData, forKey: "SavedMyImage")
+        
+        // Decode
+        let data = UserDefaults.standard.object(forKey: "SavedMyImage")
+        let myImageView:UIImageView
+        myImageView.image = UIImage(data: data as! Data)*/
+        
         self.navigationController?.pushViewController(dataReceive, animated: true)
     }
   
