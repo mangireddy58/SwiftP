@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F514435E9358A397E56C77E36774DEAC"
+               BlueprintIdentifier = "4F1E6884DE80B5CA99B1401B6BBDB0C8"
                BuildableName = "RMUniversalAlert.framework"
                BlueprintName = "RMUniversalAlert"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F514435E9358A397E56C77E36774DEAC"
+            BlueprintIdentifier = "4F1E6884DE80B5CA99B1401B6BBDB0C8"
             BuildableName = "RMUniversalAlert.framework"
             BlueprintName = "RMUniversalAlert"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "908C28889F932FFF7E8AF3906B8374EA"
+               BlueprintIdentifier = "AC4E759993D64D406D7083B9C302AA8A"
                BuildableName = "XLActionController.framework"
                BlueprintName = "XLActionController"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "908C28889F932FFF7E8AF3906B8374EA"
+            BlueprintIdentifier = "AC4E759993D64D406D7083B9C302AA8A"
             BuildableName = "XLActionController.framework"
             BlueprintName = "XLActionController"
             ReferencedContainer = "container:Pods.xcodeproj">

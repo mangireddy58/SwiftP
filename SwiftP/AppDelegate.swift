@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
     var window: UIWindow?
     var storyBoard :UIStoryboard?
     var navigationController : UINavigationController?
-    var mainController :MainViewController = MainViewController()
+   
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
@@ -32,7 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         IQKeyboardManager.sharedManager().enable = true
         
         //Firebase configuration
-        FIRApp.configure()
+        DispatchQueue.main.async {
+            FIRApp.configure()
+        }
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
@@ -49,8 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         }
         navigationController?.setNavigationBarHidden(true, animated: true)
         // storyboard with identifer
-        mainController = storyBoard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-        navigationController?.pushViewController(mainController , animated: true)
+        let maincontroller = storyBoard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+        navigationController?.pushViewController(maincontroller , animated: true)
         
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

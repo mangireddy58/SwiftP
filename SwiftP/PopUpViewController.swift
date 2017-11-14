@@ -18,7 +18,7 @@ class PopUpViewController: RootViewController {
     }
 
     @IBAction func popUpBtnAction(_ sender: Any) {
-        self.showGeneralAlert(message: "Done")
+//        self.showGeneralAlert(message: "Done")
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let asPopUp = storyBoard.instantiateViewController(withIdentifier: "ViewControllerAsPopUp")
         asPopUp.view.backgroundColor = UIColor(red: 121.0/255.0, green: 135.0/255.0, blue: 160.0/255.0, alpha: 1.0)

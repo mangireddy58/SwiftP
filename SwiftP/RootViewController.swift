@@ -9,9 +9,10 @@
 import UIKit
 import Foundation
 import RMUniversalAlert
-import JSSAlertView
 import Alamofire
-import SwiftyJSON
+import SystemConfiguration
+
+
 
 let BASE_URL =  "http://52.74.159.201:9090/Torq/login" //"http://bunker360v3.cloudapp.net/JsonService.svc/GetListaNotifications"
 let LOGIN_SERVICE_NAME = "login"
@@ -61,7 +62,7 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     }
     // Login ViewController
     func fnForLoginViewController() {
-        let secondViewController = storyBoard.instantiateViewController(withIdentifier:"DynamicTextViewController") as! DynamicTextViewController
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier:"NSUrlSessionViewController") as! NSUrlSessionViewController
         self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     //MARK:- Valid EmailId
@@ -89,17 +90,17 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     }
     
     //MARK:- Show General Alert
-    func showGeneralAlert(message: String) -> Void {
-       let alertview = JSSAlertView().show(self,title: "",
-            text: message)
-        alertview.addAction {
-            
-        }
-        alertview.setTitleFont("ClearSans-Bold") // Title font
-//        alertview.setTextFont("ClearSans") // Alert body text font
-        alertview.setButtonFont("ClearSans-Light") // Button text font
-        alertview.setTextTheme(.dark)
-    }
+//    func showGeneralAlert(message: String) -> Void {
+//       let alertview = JSSAlertView().show(self,title: "",
+//            text: message)
+//        alertview.addAction {
+//
+//        }
+//        alertview.setTitleFont("ClearSans-Bold") // Title font
+////        alertview.setTextFont("ClearSans") // Alert body text font
+//        alertview.setButtonFont("ClearSans-Light") // Button text font
+//        alertview.setTextTheme(.dark)
+//    }
     //MARK:- Date format with string
     func changeDateFormatWithString(dateString:NSString) -> NSString {
         var dateStr = dateString
@@ -118,6 +119,28 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
 //        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
 //        
 //    }
+    //MARK:- This function is used to check internet connection
+    func isConnectedToNetwork() -> Bool{
+        var zeroAddress = sockaddr_in()
+        zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
+        zeroAddress.sin_family = sa_family_t(AF_INET)
+        
+        guard let defaultRouteReachability = withUnsafePointer(to: &zeroAddress, {
+            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {
+                SCNetworkReachabilityCreateWithAddress(nil, $0)
+            }
+        }) else {
+            return false
+        }
+        var flags = SCNetworkReachabilityFlags()
+        if !SCNetworkReachabilityGetFlags(defaultRouteReachability, &flags) {
+            return false
+        }
+        let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0
+        let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
+        return (isReachable && !needsConnection)
+    }
+    
     //MARK:- AddProgressBar
     func addProgressIndicator() {
         mViewLoading = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))

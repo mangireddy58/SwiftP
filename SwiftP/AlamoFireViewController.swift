@@ -8,9 +8,11 @@
 
 import UIKit
 import Alamofire
-import AlamofireImage
-import SwiftyJSON
 
+//prod
+//let baseUrl = "http://54.169.243.5/MASService.svc/"
+//dev
+let devbaseUrl = "http://54.169.243.5:8080/MASService.svc/"
 
 class AlamoFireViewController: RootViewController {
 
@@ -54,24 +56,11 @@ class AlamoFireViewController: RootViewController {
             }
     
     
-//    func alamofire() {
-////        @"{\"user\": {\"email\": \"%@\",\"password\": \"%@\"},\"userPersonalDetails\": {\"iosId\":\"%@\"}}"
-//        let parametersString:String = "[\"user\": [\"email\": \"%@\",\"password\": \"%@\"],\"userPersonalDetails\": [\"iosId\":\"%@\"]]"
-//        let userName = self.userNameTxtFld.text
-//        let password = self.passwordTxtFld.text
-//        let string:String = String(format: "%@%@%@",parametersString, userName!,password!)
-//        
-//        let serverCommObj = ServerCommunication()
-//        serverCommObj.delegate = self as? ClassForServerCommDelegate
-//        print("",string)
-//        serverCommObj .sendPostParametersWithalamofire(parameterString: string, serviceName: BASE_URL as String)
-//        
-//        }
     
     
     
     @IBAction func loginBtnAction(_ sender: Any) {
-//        self.alamofire()
+        
     }
     
     // Downloading images using alamofire images
@@ -81,8 +70,79 @@ class AlamoFireViewController: RootViewController {
     
     imageView.af_setImage(withURL: url, placeholderImage: placeholderImage)*/
     
-    
-    
+    //MARK:- Alamofire Testing
+    func setServiceRequestToServer(service: String!, httpMethod: HTTPMethod, params: NSDictionary?,headers: HTTPHeaders?, completionHandler: @escaping ( _ response: AnyObject?,  _ error: String?) -> Void)
+    {
+        
+//        if (Utility.sharedInstance.isConnectedToNetwork() == false) // check for internet connection
+//        {
+//            completionHandler(nil, Constants.Alert.titleNoConnection)
+//            return
+//        }
+        
+        let urlString = devbaseUrl + service //staging
+//        print("URL : \(urlString)")
+//        print("Parameters \(String(describing: params))")
+        
+        
+        Alamofire.request(urlString, method: httpMethod, parameters: params as? Parameters, encoding: JSONEncoding.default, headers: nil).response
+            { (response) in
+                if (response.error == nil)
+                {
+                    self.extractDataFromResponse(response: response, completionHandler:
+                        { (responseData, errorString) in
+                            completionHandler(responseData, errorString)
+                    })
+                }
+                else
+                {
+                    print(response.error!)
+                }
+        }
+    }
+    func extractDataFromResponse(response: DefaultDataResponse, completionHandler: @escaping ( _ response: AnyObject?,  _ error: String?) -> Void)
+    {
+        if ((response.data?.count)! > 0)
+        {
+            do{
+                
+//                let dataString = NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue)
+                
+                let responseJSON = try JSONSerialization.jsonObject(with: response.data!, options: .allowFragments ) as! NSDictionary
+                
+                if let dataDictionary = responseJSON as? [String: Any]
+                {
+                    if (dataDictionary.count == 0)
+                    {
+                        completionHandler(responseJSON as AnyObject?, nil)
+                    }
+                    else
+                    {
+                        if let responseValue = dataDictionary["Response"] as? String
+                        {
+                            if(responseValue == "Fail")
+                            {
+                                completionHandler(dataDictionary as AnyObject?, nil)
+                            }
+                            else
+                            {
+                                completionHandler(dataDictionary as AnyObject?, nil)
+                            }
+                        }
+                    }
+                }
+            }
+            catch let error as NSError
+            {
+                completionHandler(nil, error.localizedDescription)
+            }
+        }
+        else
+        {
+            completionHandler(nil, "No data found")
+        }
+        
+    }
     
     
     

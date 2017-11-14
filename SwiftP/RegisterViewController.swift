@@ -147,7 +147,17 @@ class RegisterViewController: RootViewController, GIDSignInDelegate, GIDSignInUI
             present(alertController, animated: true, completion: nil)
         }
         else {
-            print("Registred successfully")
+            if isConnectedToNetwork() == false {
+                let alertController = UIAlertController(title: "No internet connection!", message: "Please check", preferredStyle: .alert)
+                let ok = UIAlertAction(title: "OK", style: .cancel, handler: { (alert) in
+                    
+                })
+                alertController.addAction(ok)
+                present(alertController, animated: true, completion: nil)
+            }
+            else {
+                 print("Registred successfully")
+            }
         }
     }
     

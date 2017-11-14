@@ -8,8 +8,12 @@
 
 import UIKit
 
-let NOTIFICATION_PARAMS = "{\"Email\":\"%@\",\"Password\":\"%@\",\"IMEI\":\"%@\"}"
-let BASE_URL = "http://54.169.243.5/MASService.svc/"
+let NOTIFICATION_PARAMS = "{\"Email\":\"%@\",\"Password\":\"%@\",\"IMEI\":\"%@\",\"DeviceType\":\"%@\"}"
+//prod
+//let baseUrl = "http://54.169.243.5/MASService.svc/"
+//dev
+let baseUrl = "http://54.169.243.5:8080/MASService.svc/"
+
 let NOTIFICATION_URL = "AuthenticateEmployee"
 
 class NSUrlSessionViewController: UIViewController {
@@ -18,6 +22,10 @@ class NSUrlSessionViewController: UIViewController {
     var SERVICE_NAME_URL = "posts"
     var LOGIN_PARAMETERS1 = "{\"username\": \"%@\",\"tweet\": \"%@\"}"
     
+    var dataArray:NSArray = []
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     
     
     override func viewDidLoad() {
@@ -77,9 +85,10 @@ class NSUrlSessionViewController: UIViewController {
     }
     // Working code
     @IBAction func NSurlSession(_sender:Any) {
+        
         let deviceUdid = UIDevice.current.identifierForVendor!.uuidString
-        let urlStr = String(format: "%@%@",BASE_URL, NOTIFICATION_URL)
-        let jsonString = String(format:NOTIFICATION_PARAMS, emailTxtFld.text!, passwordTxtFld.text!,deviceUdid )
+        let urlStr = String(format: "%@%@",baseUrl, NOTIFICATION_URL)
+        let jsonString = String(format:NOTIFICATION_PARAMS, "demo2@gmail.com", "12345678",deviceUdid,"ios" )
         print("\(urlStr)\(jsonString)")
         let jsonData = jsonString.data(using:.utf8)
         var request = URLRequest(url: URL(string: urlStr)!)
@@ -100,13 +109,16 @@ class NSUrlSessionViewController: UIViewController {
                     let message = fetchedDataDictionary?["ResponseMsg"] as! String
                     if message == "Login not allowed. This device is not registered. Contact Admin." {
                         print(message)
-                        //                        self.showUniversalAlert(title: "", message: message)
+//                        self.showUniversalAlert(title: "", message: message)
+                    }
+                    else if message == "Incorrect Email or Password" {
+                        
                     }
                     else {
-                        //                        self.dataArray = (fetchedDataDictionary?["data"] as! NSArray)
-                        //                        self.annoucementTableView.dataSource = self
-                        //                        self.annoucementTableView.delegate = self
-                        //                        self.annoucementTableView .reloadData()
+                        self.dataArray = (fetchedDataDictionary?["data"] as! NSArray)
+//                        self.annoucementTableView.dataSource = self
+//                        self.annoucementTableView.delegate = self
+//                        self.annoucementTableView .reloadData()
                     }
                 }
                 catch let error as NSError {
