@@ -1848,10 +1848,10 @@
             </objects>
             <point key="canvasLocation" x="-4817" y="543"/>
         </scene>
-        <!--View Controller-->
+        <!--Rating Star View Controller-->
         <scene sceneID="xGl-2g-k7c">
             <objects>
-                <viewController id="rgM-Ae-bID" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RatingStarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rgM-Ae-bID" customClass="RatingStarViewController" customModule="SwiftP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MKR-RM-VoD"/>
                         <viewControllerLayoutGuide type="bottom" id="fwi-gp-CQq"/>
@@ -1860,18 +1860,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gE8-Tb-EYv">
-                                <rect key="frame" x="0.0" y="20" width="320" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1kz-qA-Ykj">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gE8-Tb-EYv" customClass="RatingBar" customModule="SwiftP" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="85" width="260" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="gE8-Tb-EYv" secondAttribute="height" multiplier="26:5" id="ptF-iA-oYo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="gE8-Tb-EYv" firstAttribute="centerX" secondItem="1kz-qA-Ykj" secondAttribute="centerX" id="4Xk-Qc-voo"/>
+                                    <constraint firstAttribute="trailing" secondItem="gE8-Tb-EYv" secondAttribute="trailing" constant="30" id="6mr-U7-9pw"/>
+                                    <constraint firstItem="gE8-Tb-EYv" firstAttribute="top" secondItem="1kz-qA-Ykj" secondAttribute="top" constant="85" id="b6s-WV-Op2"/>
+                                    <constraint firstItem="gE8-Tb-EYv" firstAttribute="leading" secondItem="1kz-qA-Ykj" secondAttribute="leading" constant="30" id="pLu-ZO-Aov"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1kz-qA-Ykj" firstAttribute="top" secondItem="MKR-RM-VoD" secondAttribute="bottom" id="57k-Lx-Sgq"/>
+                            <constraint firstItem="1kz-qA-Ykj" firstAttribute="leading" secondItem="WhJ-mg-zrR" secondAttribute="leading" id="6IF-e9-HB0"/>
+                            <constraint firstAttribute="trailing" secondItem="1kz-qA-Ykj" secondAttribute="trailing" id="Rj5-1u-vAR"/>
+                            <constraint firstItem="fwi-gp-CQq" firstAttribute="top" secondItem="1kz-qA-Ykj" secondAttribute="bottom" id="d5e-jB-2Xw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ratingStarView" destination="gE8-Tb-EYv" id="YR8-eb-fyd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmh-ee-Nbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4650" y="1260.2112676056338"/>
+            <point key="canvasLocation" x="-4170" y="1224.2957746478874"/>
         </scene>
     </scenes>
     <resources>

@@ -27,6 +27,12 @@ class MainViewController: RootViewController {
     
     
     @IBAction func nextBtnAction(_ sender: Any) {
+//        let alertController = UIAlertController(title: "AirDrop", message: "Would like to share a photo", preferredStyle: .alert)
+//        let image = UIImage(named: "test-img-3")
+//        alertController.addImage(image!)
+//        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler:nil))
+//        alertController.addAction(UIAlertAction(title: "Cancel", style: .default, handler:nil))
+//        self.present(alertController, animated: true, completion: nil)
         fnForLoginViewController()
     }
     

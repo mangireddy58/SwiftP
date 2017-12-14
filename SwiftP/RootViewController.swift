@@ -11,7 +11,7 @@ import Foundation
 import RMUniversalAlert
 import Alamofire
 import SystemConfiguration
-
+import ACProgressHUD_Swift
 
 
 let BASE_URL =  "http://52.74.159.201:9090/Torq/login" //"http://bunker360v3.cloudapp.net/JsonService.svc/GetListaNotifications"
@@ -31,6 +31,7 @@ var kMobileNumberLimit = 10
 var FONTNAME_LIGHT = "AppleSDGothicNeo-Regular"
 var FONTNAME_BOLD  = "AppleSDGothicNeo-Bold"
 
+
 // For loader width
 var LOADER_WIDTH_5:UInt?   = 180
 var LOADER_HEIGHT_5:UInt?  = 54
@@ -42,6 +43,9 @@ var LOADER_HEIGHT_6P:UInt? = 92
 var LFONT15 = UIFont(name: FONTNAME_BOLD, size: 15)
 var LFONT16 = UIFont(name: FONTNAME_BOLD, size: 16)
 var LFONT18 = UIFont(name: FONTNAME_BOLD, size: 18)
+
+var showHUDAnimation : ACHudShowAnimation = .bounceIn
+var dismissHUDAnimation : ACHudDismissAnimation = .fadeOut
 
 class RootViewController: UIViewController {
 var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
@@ -62,7 +66,7 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     }
     // Login ViewController
     func fnForLoginViewController() {
-        let secondViewController = storyBoard.instantiateViewController(withIdentifier:"NSUrlSessionViewController") as! NSUrlSessionViewController
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier:"RatingStarViewController") as! RatingStarViewController
         self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     //MARK:- Valid EmailId
@@ -113,12 +117,6 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         return finalStr as NSString
     }
     
-    //MARK:- MENU BUTTTON ACTION
-//    @IBAction func menuBtnAction(_ sender: UIButton) {
-//        menuBtnAction.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
-//        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-//        
-//    }
     //MARK:- This function is used to check internet connection
     func isConnectedToNetwork() -> Bool{
         var zeroAddress = sockaddr_in()
@@ -228,9 +226,22 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         self.view.isUserInteractionEnabled = true;
     }
     // PunchApp
-//    static let dev_Base_Url = "http://54.169.243.5:8080/MASService.svc"
-//    static let prod_Base_Url = "http://54.169.243.5/MASService.svc"
+//    static let dev_Base_Url = "http://54.169.243.5:8080/MASService.svc/"
+//    static let prod_Base_Url = "http://54.169.243.5/MASService.svc/"
     
+    //MARK:- Loader
+    //MARK:- Loaders
+    func fnForShowProgressHud(hudStatus:String) {
+        ACProgressHUD.shared.showHudAnimation = showHUDAnimation
+        ACProgressHUD.shared.showHUD(withStatus: hudStatus)
+//        self.perform(#selector(self.hideHUD), with: nil, afterDelay: 5.0)
+    }
+    func fnForHideProgressHud () {
+        ACProgressHUD.shared.dismissHudAnimation = dismissHUDAnimation
+    }
+    @objc func hideHUD(){
+        ACProgressHUD.shared.hideHUD()
+    }
   
     
 }

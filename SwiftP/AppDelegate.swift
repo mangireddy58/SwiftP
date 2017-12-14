@@ -13,6 +13,7 @@ import FacebookCore
 import FacebookLogin
 import FBSDKLoginKit
 import UserNotifications
+import UserNotificationsUI
 import AudioToolbox
 import Firebase
 
@@ -27,7 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        //Push notifications
         self.fnForRegisterRemoteNotification()
+        
         //For IQKeyboardManager
         IQKeyboardManager.sharedManager().enable = true
         
@@ -35,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         DispatchQueue.main.async {
             FIRApp.configure()
         }
-        
+        // Facebook 
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         self.setBadgeCounter(count: 0)
@@ -113,16 +116,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
     func fnForRegisterRemoteNotification()  {
         if #available(iOS 10.0, *) {
             UNUserNotificationCenter.current().requestAuthorization(options:[.badge, .alert, .sound]){ (granted, error) in }
-            UIApplication.shared.registerForRemoteNotifications()
+            DispatchQueue.main.async(execute: {
+                UIApplication.shared.registerForRemoteNotifications()
+            })
         }
         else {
             UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil))
-            UIApplication.shared.registerForRemoteNotifications()
+            DispatchQueue.main.async(execute: {
+                UIApplication.shared.registerForRemoteNotifications()
+            })
         }
     }
     //MARK:-Remote Notification Delegate // <= iOS 9.x
     func application(_ application: UIApplication, didRegister notificationSettings: UIUserNotificationSettings) {
-        UIApplication.shared.registerForRemoteNotifications()
+        DispatchQueue.main.async(execute: {
+            UIApplication.shared.registerForRemoteNotifications()
+        })
     }
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         print("Got token data! \(deviceToken)")

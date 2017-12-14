@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FC3AAD5865F991C5E83E2AF6872F6282"
+               BlueprintIdentifier = "86864C16C56C2938488C4E44C5DAD2EE"
                BuildableName = "UIAlertView_Blocks.framework"
                BlueprintName = "UIAlertView+Blocks"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FC3AAD5865F991C5E83E2AF6872F6282"
+            BlueprintIdentifier = "86864C16C56C2938488C4E44C5DAD2EE"
             BuildableName = "UIAlertView_Blocks.framework"
             BlueprintName = "UIAlertView+Blocks"
             ReferencedContainer = "container:Pods.xcodeproj">

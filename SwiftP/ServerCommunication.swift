@@ -17,64 +17,86 @@ protocol ClassForServerCommDelegate {
 class ServerCommunication: NSObject {
     
     var delegate : ClassForServerCommDelegate?
-    func sendHttpPostRequestWithParam(parametersString : NSString, serviceName: NSString) -> Void {
-//        let serviceUrl = NSString(format :"%@%@",BASE_URL,serviceName)
-//        let data = parametersString.data(using: String.Encoding.utf8.rawValue)
-//        let error:NSError
-//        let parametersDictionary = JSONSerialization.jsonObject(with: data!, options:JSONSerialization.ReadingOptions(rawValue: 0))
-        
-        let serviceUrl = String(format: "%@,%@", BASE_URL, serviceName)
-        let data = serviceUrl.data(using: .utf8)
-        do {
-            let parameterDictionary = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! NSDictionary
-            let manager = AFHTTPSessionManager()
-            manager.requestSerializer = AFJSONRequestSerializer()
-            manager.requestSerializer .setValue("application/json", forHTTPHeaderField: "Content-Type")
-            manager.requestSerializer .setValue("application/json", forHTTPHeaderField: "Accept")
-            manager.post(serviceUrl, parameters: parameterDictionary, progress: nil, success: { (operation: URLSessionDataTask, responseObject: Any?) in
-                print("Success")
-            }, failure: {(operation: URLSessionDataTask?, error) in
-                let error =  Error.self
-                print("Failure, error is \(String(describing: error))")
-            })
-        } catch let error as NSError {
-            print("Failed to load: \(error.localizedDescription)")
-        }
+    
+    func sendHttpPostRequestWithParam(parametersString : String, serviceName: String) -> Void {
+        let serviceUrl = "\(BASE_URL)\(serviceName)"
+        let data: Data? = parametersString.data(using: String.Encoding.utf8)
+        let parametersDictionary = try? JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary
+        print("\(String(describing: parametersDictionary))")
+        let manager = AFHTTPSessionManager(sessionConfiguration: URLSessionConfiguration.default)
+        manager.requestSerializer.timeoutInterval = 30//Constants.serviceTimeOut.service_Time_Out
+        manager.requestSerializer = AFJSONRequestSerializer()
+        manager.requestSerializer.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        manager.requestSerializer.setValue("application/json", forHTTPHeaderField: "Accept")
+        manager.post(serviceUrl, parameters: parametersDictionary as? NSDictionary, progress: nil, success: {(_ task: URLSessionDataTask, _ responseObject: Any?) -> Void in
+            if ((self.delegate) != nil) {
+                self.delegate?.onServiceSuccess(responseDictionary : responseObject as! NSDictionary)
+            }
+        }, failure: {(operation: URLSessionDataTask?, error: Error) in
+            let error = Error.self
+            print("Failed: \(String(describing: error))")
+            if ((self.delegate) != nil) {
+                self.delegate? .onServiceFailed()
+            }
+        })
     }
     
     //MARK:- ServerCommunication
     func sendPostParametersWithalamofire(parameterString:[String:Any], serviceName:NSString) -> Void {
-        let serviceUrl = String(format: "%@%@", BASE_URL, serviceName)
-        print("Service Url \(serviceUrl)")
-        print("Parameters \(parameterString)")
-        Alamofire.request(serviceUrl, method: .post, parameters: parameterString, encoding: JSONEncoding.default).responseJSON { response in
-            if let data = response.data,
-                let utf8Text = String(data: data, encoding: .utf8) {
-//                print("Data: \(utf8Text)") // original server data as UTF8 string
-                let data = utf8Text.data(using: String.Encoding.utf8)
-                do {
-                    let jsonDict = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
-                    print("Dictionary: \(String(describing: jsonDict))")
-                    if ((self.delegate) != nil) {
-                        self.delegate?.onServiceSuccess(responseDictionary : jsonDict as! NSDictionary)
+        let serviceUrl = "\(BASE_URL)\(serviceName)"
+        Alamofire.request(serviceUrl, method: .post, parameters: [:], encoding: JSONEncoding.default)
+            .responseJSON { response in
+                debugPrint(response)
+                if (response.error == nil) {
+                    if let value = response.result.value {
+                        if ((self.delegate) != nil) {
+                            self.delegate?.onServiceSuccess(responseDictionary : value as! NSDictionary)
+                        }
                     }
-                }catch {
-                    print("Not converted to Dict")
+                }
+                else {
+                    print(response.result.error!)
                     if ((self.delegate) != nil) {
                         self.delegate? .onServiceFailed()
                     }
                 }
-            }
-            else {
-                print("No response")
-                if ((self.delegate) != nil) {
-                    self.delegate? .onServiceFailed()
-                }
-            }
         }
     }
     
     //MARK:- Normal Json Parsing
-    
+    func sendPostParametersWithNSUrlSession(parameterString : String, serviceName : String)-> Void {
+        let urlStr = "\(BASE_URL)\(serviceName)"
+        let jsonString = String(format: "%@", parameterString)
+        let jsonData = jsonString.data(using:.utf8)
+        var request = URLRequest(url: URL(string: urlStr)!)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        request.httpMethod = "POST"
+        request.httpBody = jsonData
+        let configuration = URLSessionConfiguration.default
+        configuration.timeoutIntervalForRequest = TimeInterval(30)
+        let session = URLSession(configuration: configuration, delegate: nil, delegateQueue: OperationQueue.main)
+        let task = session.dataTask(with: request) {(data , response, error) in
+            if(error != nil){
+                print("Error \(String(describing: error))")
+                if ((self.delegate) != nil) {
+                    self.delegate? .onServiceFailed()
+                }
+            }
+            else {
+                do {
+                    let fetchedDataDictionary = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary
+                    print(fetchedDataDictionary!)
+                    if ((self.delegate) != nil) {
+                        self.delegate?.onServiceSuccess(responseDictionary : fetchedDataDictionary!)
+                    }
+                }
+                catch let error as NSError {
+                    print(error.debugDescription)
+                }
+            }
+        }
+        task.resume()
+    }
 }
 

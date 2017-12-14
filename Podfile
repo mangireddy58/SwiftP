@@ -21,5 +21,6 @@ target 'SwiftP' do
  pod 'Firebase/Database'
  pod 'Firebase/Storage'
  pod 'ReachabilitySwift'
+ pod 'ACProgressHUD-Swift', '~> 1.2'
  
 end

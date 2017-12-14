@@ -16,16 +16,19 @@ class CollectionDemoController: RootViewController, UICollectionViewDataSource, 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        parseData()
-        collectionDemoView.dataSource = self
-        collectionDemoView.delegate = self
-        collectionDemoView.reloadData()
+        if self.isConnectedToNetwork() == false {
+            print("No internet connection please check")
+        }
+        else {
+            parseData()
+        }
         
 //        self.addProgressIndicator()
 //        self.hideProgressIndicator()
     }
     func parseData() {
         self.showProgressIndicator()
+        self.fnForShowProgressHud(hudStatus: "Getting data...")
         //Post
 /*      let configuration = URLSessionConfiguration .default
         let session = URLSession(configuration: configuration)
@@ -93,14 +96,18 @@ class CollectionDemoController: RootViewController, UICollectionViewDataSource, 
         //                    print(self.responseArray)
         //                    for eachFetchedCountry in fetchedDataArray {
         //                        let eachCountry = eachFetchedCountry as! [String: Any]
-        ////                        print(eachCountry)
+        //                        print(eachCountry)
         //                        let countryNameArray = eachCountry["name"] as! NSMutableArray
         //                        let capitalNameArray = eachCountry["capital"] as! NSMutableArray
         //                        print(countryNameArray, capitalNameArray)
         //
         //                    }//for ending
+                            self.collectionDemoView.dataSource = self
+                            self.collectionDemoView.delegate = self
+                            
                             self.collectionDemoView.reloadData()
-                            self.hideProgressIndicator()
+                            
+                            self.hideHUD()
                         }
                         catch {
                             print("Error 2")

@@ -14,9 +14,9 @@ import FacebookLogin
 import FBSDKLoginKit
 
 class RegisterViewController: RootViewController, GIDSignInDelegate, GIDSignInUIDelegate, UITextFieldDelegate {
+    
     var parentNavigationController : UINavigationController?
     var dict : [String : AnyObject]!
-    
     @IBOutlet weak var firstNameTxtFld: UITextField!
     @IBOutlet weak var lastNameTxtFld: UITextField!
     @IBOutlet weak var emailTxtFld: UITextField!
@@ -28,9 +28,9 @@ class RegisterViewController: RootViewController, GIDSignInDelegate, GIDSignInUI
     @IBOutlet weak var gPlusBtn: UIButton!
     @IBOutlet weak var fbBtn: UIButton!
     @IBOutlet weak var registerBtn: UIButton!
+    @IBOutlet weak var genderLbl: UILabel!
     
     var genderStr:NSString!
-    @IBOutlet weak var genderLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
