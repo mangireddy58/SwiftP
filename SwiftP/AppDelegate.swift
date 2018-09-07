@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         }
         navigationController?.setNavigationBarHidden(true, animated: true)
         // storyboard with identifer
-        let maincontroller = storyBoard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+        let maincontroller = storyBoard?.instantiateViewController(withIdentifier: "DynamicLabelViewController") as! DynamicLabelViewController
         navigationController?.pushViewController(maincontroller , animated: true)
         
         window?.rootViewController = navigationController

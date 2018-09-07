@@ -66,7 +66,7 @@ var storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     }
     // Login ViewController
     func fnForLoginViewController() {
-        let secondViewController = storyBoard.instantiateViewController(withIdentifier:"RatingStarViewController") as! RatingStarViewController
+        let secondViewController = storyBoard.instantiateViewController(withIdentifier:"PageMenuController") as! PageMenuController
         self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     //MARK:- Valid EmailId

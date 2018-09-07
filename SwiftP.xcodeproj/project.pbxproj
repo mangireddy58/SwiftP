@@ -90,6 +90,7 @@
 		4AFA4ABD1EE7D89500B0E972 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA4ABC1EE7D89500B0E972 /* RootViewController.swift */; };
 		4AFA4AC01EE7DC3B00B0E972 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA4ABF1EE7DC3B00B0E972 /* LoginViewController.swift */; };
 		4AFA4AC71EE7FEF800B0E972 /* ServerCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFA4AC61EE7FEF800B0E972 /* ServerCommunication.swift */; };
+		9D6BFE7F2142A93500CA6F2E /* DynamicLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BFE7E2142A93500CA6F2E /* DynamicLabelViewController.swift */; };
 		D1877270C60390418D2EF501 /* Pods_SwiftP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DE346D48FF81E27E1E96D6 /* Pods_SwiftP.framework */; };
 /* End PBXBuildFile section */
 
@@ -189,6 +190,7 @@
 		4AFA4ABF1EE7DC3B00B0E972 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4AFA4AC61EE7FEF800B0E972 /* ServerCommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerCommunication.swift; sourceTree = "<group>"; };
 		64798046DBBFB041A38CE658 /* Pods-SwiftP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftP/Pods-SwiftP.debug.xcconfig"; sourceTree = "<group>"; };
+		9D6BFE7E2142A93500CA6F2E /* DynamicLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLabelViewController.swift; sourceTree = "<group>"; };
 		B425C876F7A1188331BB803E /* Pods-SwiftP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftP.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftP/Pods-SwiftP.release.xcconfig"; sourceTree = "<group>"; };
 		E0DE346D48FF81E27E1E96D6 /* Pods_SwiftP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -600,6 +602,7 @@
 		4AFA4AB61EE7CAAD00B0E972 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9D6BFE7D2142A8F000CA6F2E /* Dynamic Label */,
 				4AE7B69D1FC58A1D00D4EECF /* RatingViewController */,
 				4A7B44C21F67E10100F8A57A /* Rechability */,
 				4A03A17F1F3DA92F002E96D8 /* Extensions */,
@@ -673,6 +676,14 @@
 			name = ServerCommunication;
 			sourceTree = "<group>";
 		};
+		9D6BFE7D2142A8F000CA6F2E /* Dynamic Label */ = {
+			isa = PBXGroup;
+			children = (
+				9D6BFE7E2142A93500CA6F2E /* DynamicLabelViewController.swift */,
+			);
+			name = "Dynamic Label";
+			sourceTree = "<group>";
+		};
 		F16496B3625BF99ECBC2BF52 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -717,7 +728,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = simplicity;
 				TargetAttributes = {
 					4AFA4AA01EE7CA6600B0E972 = {
@@ -899,6 +910,7 @@
 				4A03A1831F3DAACD002E96D8 /* ImageUploadingViewController.swift in Sources */,
 				4A6190A51F0288B400479861 /* MenuItemCell.swift in Sources */,
 				4A6190A01F02780200479861 /* MenuViewController.swift in Sources */,
+				9D6BFE7F2142A93500CA6F2E /* DynamicLabelViewController.swift in Sources */,
 				4A529A001EFA355900C09EF2 /* ViewControllerAsPopUp.swift in Sources */,
 				4A03A1811F3DA958002E96D8 /* ImageUploading+Extension.swift in Sources */,
 				4AE7B6A31FC58B7B00D4EECF /* RatingStarViewController.swift in Sources */,
@@ -989,6 +1001,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -996,6 +1009,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1045,6 +1059,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1052,6 +1067,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

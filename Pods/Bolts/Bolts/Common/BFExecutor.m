@@ -39,7 +39,7 @@ __attribute__((noinline)) static size_t remaining_stack_size(size_t *restrict to
 
 @interface BFExecutor ()
 
-@property (nonatomic, copy) void(^block)(void(^block)());
+@property (nonatomic, copy) void(^block)(void(^block)(void));
 
 @end
 
